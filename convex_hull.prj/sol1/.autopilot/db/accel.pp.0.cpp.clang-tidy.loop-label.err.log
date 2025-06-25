@@ -1,0 +1,4 @@
+1 warning and 9 errors generated.
+Error while processing D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp.
+clang-tidy applied 81 of 81 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

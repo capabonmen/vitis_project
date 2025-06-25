@@ -1,0 +1,378 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon Jun 23 19:22:21 -0300 2025
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         convex_hull.prj
+    * Solution:        sol1 (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              19517
+FF:               16431
+DSP:              8
+BRAM:             2
+URAM:             0
+SRL:              309
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was NOT met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 10.751      |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                            | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                            | 19517 | 16431 | 8   | 2    |      |     |        |      |         |          |        |
+|   (inst)                                                                        | 133   | 715   | 2   |      |      |     |        |      |         |          |        |
+|   control_r_s_axi_U                                                             | 111   | 171   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                               | 165   | 152   |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                                                                 | 662   | 854   |     | 1    |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                                                                 | 922   | 1202  |     | 1    |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646                       | 7982  | 6120  |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646)                   | 7918  | 6120  |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668                       | 8013  | 6127  |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668)                   | 7949  | 6127  |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692     | 34    | 19    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692) |       | 17    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698                       | 177   | 45    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698)                   | 103   | 43    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714     | 40    | 22    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714) | 3     | 20    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621         | 39    | 29    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621)     | 3     | 27    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630         | 184   | 73    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630)     | 148   | 71    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723         | 34    | 19    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723)     |       | 17    |     |      |      |     |        |      |         |          |        |
+|   grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729         | 43    | 22    |     |      |      |     |        |      |         |          |        |
+|     (grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729)     | 6     | 20    |     |      |      |     |        |      |         |          |        |
+|   grp_cross_r_fu_1481                                                           | 206   | 323   | 6   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_0_U17                                                      | 79    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_0_U18                                                      | 79    | 17    | 3   |      |      |     |        |      |         |          |        |
+|   hull_x_1_U                                                                    | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_x_2_U                                                                    | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_x_3_U                                                                    | 34    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_x_U                                                                      | 33    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_y_1_U                                                                    | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_y_2_U                                                                    | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_y_3_U                                                                    | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   hull_y_U                                                                      | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   in_img_data_fifo_U                                                            | 16    | 20    |     |      |      |     |        |      |         |          |        |
+|   out_img_data_fifo_U                                                           | 9     | 6     |     |      |      |     |        |      |         |          |        |
+|   pts_x_1_U                                                                     | 33    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_x_2_U                                                                     | 33    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_x_3_U                                                                     | 78    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_x_U                                                                       | 33    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_y_1_U                                                                     | 73    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_y_2_U                                                                     | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_y_3_U                                                                     | 46    | 32    |     |      |      |     |        |      |         |          |        |
+|   pts_y_U                                                                       | 32    | 32    |     |      |      |     |        |      |         |          |        |
+|   sparsemux_9_2_32_1_1_U100                                                     | 32    |       |     |      |      |     |        |      |         |          |        |
+|   sparsemux_9_2_32_1_1_U95                                                      | 32    |       |     |      |      |     |        |      |         |          |        |
+|   sparsemux_9_2_32_1_1_U98                                                      | 32    |       |     |      |      |     |        |      |         |          |        |
+|   sparsemux_9_2_32_1_1_U99                                                      | 32    |       |     |      |      |     |        |      |         |          |        |
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 36.69% | OK     |
+| FD                                                        | 50%       | 15.44% | OK     |
+| LUTRAM+SRL                                                | 25%       | 4.72%  | OK     |
+| MUXF7                                                     | 15%       | 0.06%  | OK     |
+| DSP                                                       | 80%       | 3.64%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.71%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 2.17%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 414    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.86   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was NOT met
++--------+--------+-------------------------------------------------------------------------------------+-------------------------+--------------+------------+----------------+----------------+--------------+
+| Path   |  SLACK | STARTPOINT PIN                                                                      | ENDPOINT PIN            | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|        |        |                                                                                     |                         |              |            |                |          DELAY |        DELAY |
++--------+--------+-------------------------------------------------------------------------------------+-------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[0]/D  |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path2  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[10]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path3  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[11]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path4  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[12]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path5  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[13]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path6  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[14]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path7  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[15]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path8  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[16]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path9  | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[17]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
+| Path10 | -0.751 | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C | hull_x_1_U/q0_reg[18]/D |           13 |        115 |         10.651 |          2.913 |        7.738 |
++--------+--------+-------------------------------------------------------------------------------------+-------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_0_0/SP                                                    | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[0]                                                              | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_10_10/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[10]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_11_11/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[11]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_12_12/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[12]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_13_13/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[13]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path6 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_14_14/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[14]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path7 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_15_15/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[15]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path8 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_16_16/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[16]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path9 Cells                                                                       | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_17_17/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[17]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------+----------------------+
+    | Path10 Cells                                                                      | Primitive Type       |
+    +-----------------------------------------------------------------------------------+----------------------+
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep | FLOP_LATCH.flop.FDRE |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0    | LUT.others.LUT4      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23   | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9    | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0 | CARRY.others.CARRY4  |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189              | LUT.others.LUT5      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149    | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59     | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0  | LUT.others.LUT6      |
+    | grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1   | LUT.others.LUT6      |
+    | hull_x_1_U/ram_reg_0_15_18_18/SP                                                  | DMEM.dram.RAM32X1S   |
+    | hull_x_1_U/q0_reg[18]                                                             | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------------+
+| Report Type              | Report Location                                                          |
++--------------------------+--------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/convex_hull_accel_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/convex_hull_accel_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/convex_hull_accel_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/convex_hull_accel_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/convex_hull_accel_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/convex_hull_accel_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------------------+
+
+

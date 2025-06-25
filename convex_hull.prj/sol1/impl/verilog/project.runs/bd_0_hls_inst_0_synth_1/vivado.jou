@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jun 23 18:46:22 2025
+# Process ID: 17216
+# Current directory: D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: DESKTOP-789A4L0, OS: Windows, CPU Frequency: 2495 MHz, CPU Physical cores: 4, Host memory: 7480 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace

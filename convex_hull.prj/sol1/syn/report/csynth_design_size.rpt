@@ -1,0 +1,56 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |    700       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  4,311       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  3,923       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  3,930       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  3,263       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 66,288       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 36,773       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 36,773       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 36,175       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 36,207       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 36,199       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 36,187       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 36,187       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 30,043       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 30,056       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 30,046       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-----------------------------+--------------------+---------------+-------------------+---------------------+---------------------+---------------------+
+| Function                    | Location           | Compile/Link  | Unroll/Inline     | Array/Struct        | Performance         | HW Transforms       |
++-----------------------------+--------------------+---------------+-------------------+---------------------+---------------------+---------------------+
+| + convex_hull_accel         | accel.cpp:12       | 700           | 3,263             | 36,207              | 30,043              | 30,046              |
+|  + Mat                      | xf_structs.hpp:670 |  66 (2 calls) |                   |                     |                     |                     |
+|   + init                    | xf_structs.hpp:605 |  56 (2 calls) |                   |                     |                     |                     |
+|      alloc_data<0, nullptr> | xf_structs.hpp:493 |   2 (2 calls) |                   |                     |                     |                     |
+|    write<0, nullptr>        | xf_structs.hpp:552 |  28 (4 calls) |                   |                     |                     |                     |
+|    read<0, nullptr>         | xf_structs.hpp:541 |  27 (3 calls) |                   |                     |                     |                     |
+|    cross                    | accel.cpp:7        |  48 (2 calls) | 1,792 (128 calls) | 28,672 (2048 calls) | 16,384 (2048 calls) | 16,384 (2048 calls) |
+|    ~Mat                     | xf_structs.hpp:865 |   2 (2 calls) |                   |                     |                     |                     |
++-----------------------------+--------------------+---------------+-------------------+---------------------+---------------------+---------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

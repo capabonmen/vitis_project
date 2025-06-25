@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/.autopilot/db/accel.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>D:/Xilinx/Vitis_Libraries/vision/L1/include\common/xf_video_mem.hpp</string>
+      <key>line</key>
+      <integer>759</integer>
+      <key>column</key>
+      <integer>47</integer>
+      <key>message</key>
+      <string>&apos;factor&apos; in &apos;#pragma HLS array_reshape&apos; is ignored</string>
+      <key>ID</key>
+      <integer>5539</integer>
+      <key>WarningOption</key>
+      <string>extra-tokens</string>
+    </dict>
+  </array>
+</dict>

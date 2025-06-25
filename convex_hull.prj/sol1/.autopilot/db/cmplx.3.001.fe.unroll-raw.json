@@ -1,0 +1,55 @@
+{
+  "0": {
+    "basicblocks": 378,
+    "calls": "2 3 2 3 1 1 2 2 3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+    "file": "accel.cpp",
+    "fileloc": 12,
+    "instructions": 2242,
+    "loads": {
+      "L": 16,
+      "T": 1
+    },
+    "name": "convex_hull_accel",
+    "stores": {
+      "L": 18,
+      "T": 4
+    },
+    "total_instructions": 4311
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "accel.cpp",
+    "fileloc": 7,
+    "instructions": 16,
+    "loads": {
+      "L": 8
+    },
+    "name": "cross",
+    "total_instructions": 16
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "write<0, nullptr>",
+    "total_instructions": 3
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 3,
+    "name": "read<0, nullptr>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  }
+}

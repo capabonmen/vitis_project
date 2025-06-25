@@ -1,0 +1,1419 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+ECHO est  desactivado.
+ECHO est  desactivado.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 468.156 ; gain = 184.137
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10820
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1342.082 ; gain = 439.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_flow_control_loop_pipe_sequential_init' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_flow_control_loop_pipe_sequential_init' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_104_11' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_104_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_sparsemux_9_2_32_1_1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_sparsemux_9_2_32_1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_sparsemux_9_2_32_1_1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_104_11' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_104_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_118_13' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_118_13.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_118_13' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_118_13.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_143_17' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_143_17.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_143_17' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_143_17.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_cross_r' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_cross_r.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_mul_32s_32s_32_2_0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_32s_32s_32_2_0.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_mul_32s_32s_32_2_0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_32s_32s_32_2_0.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_cross_r' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_cross_r.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_control_s_axi' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_s_axi.v:222]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_control_s_axi' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_control_r_s_axi' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_r_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_r_s_axi.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_control_r_s_axi' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_r_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_store' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_mem' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_mem' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized3' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized3' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_store' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_load' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized4' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized3' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized3' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized4' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized5' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_mem__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_mem__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized5' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_load' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_write' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_burst_converter' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_burst_converter' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized6' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized4' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized4' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized6' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_throttle' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized7' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized5' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized5' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized7' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized8' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized6' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_srl__parameterized6' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_fifo__parameterized8' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_throttle' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1858]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1861]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_write' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_read' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1539]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi_read' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:1355]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem0_m_axi' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_store' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_mem' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_mem' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized3' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized3' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_store' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_load' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized4' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized3' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized3' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized4' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized5' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_mem__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_mem__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized5' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_load' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:327]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_write' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_burst_converter' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_burst_converter' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized6' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized4' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized4' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized6' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_throttle' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized0' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized7' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized5' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized5' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized7' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized8' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized6' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_srl__parameterized6' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_fifo__parameterized8' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_throttle' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2173]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1858]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1861]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_write' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_read' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized2' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized2' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:2399]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1539]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi_read' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:1355]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_gmem1_m_axi' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_mul_15s_15s_15_1_1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_15s_15s_15_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_mul_15s_15s_15_1_1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_15s_15s_15_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_mul_8ns_8ns_16_1_1' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_8ns_8ns_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_mul_8ns_8ns_16_1_1' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_8ns_8ns_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_fifo_w8_d2_S' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'convex_hull_accel_fifo_w8_d2_S_ShiftReg' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_fifo_w8_d2_S_ShiftReg' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:117]
+WARNING: [Synth 8-7071] port 'reset' of module 'convex_hull_accel_fifo_w8_d2_S_ShiftReg' is unconnected for instance 'U_convex_hull_accel_fifo_w8_d2_S_ShiftReg' [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:50]
+WARNING: [Synth 8-7023] instance 'U_convex_hull_accel_fifo_w8_d2_S_ShiftReg' of module 'convex_hull_accel_fifo_w8_d2_S_ShiftReg' has 6 connections declared, but only 5 given [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel_fifo_w8_d2_S' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_fifo_w8_d2_S.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'convex_hull_accel' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_control_s_axi.v:293]
+WARNING: [Synth 8-7129] Port reset in module convex_hull_accel_fifo_w8_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[31] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[30] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[29] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[28] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[27] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[26] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[25] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[24] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[23] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[22] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[21] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[20] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[19] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[18] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[17] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[16] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[15] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[14] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[13] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[12] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[11] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module convex_hull_accel_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module convex_hull_accel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module convex_hull_accel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module convex_hull_accel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module convex_hull_accel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module convex_hull_accel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module convex_hull_accel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module convex_hull_accel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module convex_hull_accel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module convex_hull_accel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module convex_hull_accel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module convex_hull_accel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module convex_hull_accel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module convex_hull_accel_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module convex_hull_accel_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module convex_hull_accel_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module convex_hull_accel_gmem0_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module convex_hull_accel_mul_32s_32s_32_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_AWREADY in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_ARREADY in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RVALID in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[7] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[6] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[5] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[4] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[3] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[2] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[1] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RDATA[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RLAST in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RID[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[10] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[9] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[8] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[7] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[6] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[5] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[4] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[3] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[2] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[1] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RUSER[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[1] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BVALID in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[1] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BID[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BUSER[0] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[63] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[62] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[61] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[60] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[59] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[58] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[57] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[56] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[55] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[54] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[53] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[52] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[51] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[50] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[49] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[48] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[47] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_data[46] in module convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:59 ; elapsed = 00:02:21 . Memory (MB): peak = 2496.277 ; gain = 1593.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:02:32 . Memory (MB): peak = 2496.277 ; gain = 1593.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:32 . Memory (MB): peak = 2496.277 ; gain = 1593.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2921.168 ; gain = 50.340
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/convex_hull_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/convex_hull_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 6034.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+El sistema no puede encontrar la ruta especificada.
+Constraint Validation Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 6034.926 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:08:39 ; elapsed = 00:09:41 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'convex_hull_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'convex_hull_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'convex_hull_accel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'convex_hull_accel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'convex_hull_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'convex_hull_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'convex_hull_accel_control_r_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'convex_hull_accel_control_r_s_axi'
+INFO: [Synth 8-7082] The signal mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-7082] The signal mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'convex_hull_accel_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:10:09 ; elapsed = 00:11:33 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 143   
+	   3 Input   32 Bit       Adders := 5     
+	   2 Input   31 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 6     
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 9     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 12    
+	   2 Input    5 Bit       Adders := 42    
+	   2 Input    4 Bit       Adders := 24    
+	   2 Input    3 Bit       Adders := 18    
+	   3 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 14    
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               96 Bit    Registers := 12    
+	               72 Bit    Registers := 6     
+	               64 Bit    Registers := 14    
+	               52 Bit    Registers := 4     
+	               37 Bit    Registers := 2     
+	               34 Bit    Registers := 4     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 340   
+	               31 Bit    Registers := 8     
+	               20 Bit    Registers := 4     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               15 Bit    Registers := 2     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 16    
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 15    
+	                5 Bit    Registers := 20    
+	                4 Bit    Registers := 159   
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 27    
+	                1 Bit    Registers := 250   
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---RAMs : 
+	               8K Bit	(255 X 34 bit)          RAMs := 2     
+	              567 Bit	(63 X 9 bit)          RAMs := 2     
+	              512 Bit	(16 X 32 bit)          RAMs := 16    
++---Muxes : 
+	   2 Input 1412 Bit        Muxes := 2     
+	   2 Input 1411 Bit        Muxes := 126   
+	   3 Input 1411 Bit        Muxes := 2     
+	   2 Input 1405 Bit        Muxes := 2     
+	   2 Input 1400 Bit        Muxes := 2     
+	   2 Input 1395 Bit        Muxes := 2     
+	   5 Input 1383 Bit        Muxes := 2     
+	   2 Input 1361 Bit        Muxes := 2     
+	   2 Input 1356 Bit        Muxes := 2     
+	   2 Input 1351 Bit        Muxes := 2     
+	   2 Input 1339 Bit        Muxes := 2     
+	   2 Input 1334 Bit        Muxes := 2     
+	   2 Input 1329 Bit        Muxes := 2     
+	   2 Input 1317 Bit        Muxes := 2     
+	   2 Input 1312 Bit        Muxes := 2     
+	   2 Input 1307 Bit        Muxes := 2     
+	   5 Input 1295 Bit        Muxes := 2     
+	   2 Input 1273 Bit        Muxes := 2     
+	   2 Input 1268 Bit        Muxes := 2     
+	   2 Input 1263 Bit        Muxes := 2     
+	   2 Input 1251 Bit        Muxes := 2     
+	   2 Input 1246 Bit        Muxes := 2     
+	   2 Input 1241 Bit        Muxes := 2     
+	   2 Input 1229 Bit        Muxes := 2     
+	   2 Input 1224 Bit        Muxes := 2     
+	   2 Input 1219 Bit        Muxes := 2     
+	   5 Input 1207 Bit        Muxes := 2     
+	   2 Input 1185 Bit        Muxes := 2     
+	   2 Input 1180 Bit        Muxes := 2     
+	   2 Input 1175 Bit        Muxes := 2     
+	   2 Input 1163 Bit        Muxes := 2     
+	   2 Input 1158 Bit        Muxes := 2     
+	   2 Input 1153 Bit        Muxes := 2     
+	   2 Input 1141 Bit        Muxes := 2     
+	   2 Input 1136 Bit        Muxes := 2     
+	   2 Input 1131 Bit        Muxes := 2     
+	   5 Input 1119 Bit        Muxes := 2     
+	   2 Input 1097 Bit        Muxes := 2     
+	   2 Input 1092 Bit        Muxes := 2     
+	   2 Input 1087 Bit        Muxes := 2     
+	   2 Input 1075 Bit        Muxes := 2     
+	   2 Input 1070 Bit        Muxes := 2     
+	   2 Input 1065 Bit        Muxes := 2     
+	   2 Input 1053 Bit        Muxes := 2     
+	   2 Input 1048 Bit        Muxes := 2     
+	   2 Input 1043 Bit        Muxes := 2     
+	   5 Input 1031 Bit        Muxes := 2     
+	   2 Input 1009 Bit        Muxes := 2     
+	   2 Input 1004 Bit        Muxes := 2     
+	   2 Input  999 Bit        Muxes := 2     
+	   2 Input  987 Bit        Muxes := 2     
+	   2 Input  982 Bit        Muxes := 2     
+	   2 Input  977 Bit        Muxes := 2     
+	   2 Input  965 Bit        Muxes := 2     
+	   2 Input  960 Bit        Muxes := 2     
+	   2 Input  955 Bit        Muxes := 2     
+	   5 Input  943 Bit        Muxes := 2     
+	   2 Input  921 Bit        Muxes := 2     
+	   2 Input  916 Bit        Muxes := 2     
+	   2 Input  911 Bit        Muxes := 2     
+	   2 Input  899 Bit        Muxes := 2     
+	   2 Input  894 Bit        Muxes := 2     
+	   2 Input  889 Bit        Muxes := 2     
+	   2 Input  877 Bit        Muxes := 2     
+	   2 Input  872 Bit        Muxes := 2     
+	   2 Input  867 Bit        Muxes := 2     
+	   5 Input  855 Bit        Muxes := 2     
+	   2 Input  833 Bit        Muxes := 2     
+	   2 Input  828 Bit        Muxes := 2     
+	   2 Input  823 Bit        Muxes := 2     
+	   2 Input  811 Bit        Muxes := 2     
+	   2 Input  806 Bit        Muxes := 2     
+	   2 Input  801 Bit        Muxes := 2     
+	   2 Input  789 Bit        Muxes := 2     
+	   2 Input  784 Bit        Muxes := 2     
+	   2 Input  779 Bit        Muxes := 2     
+	   5 Input  767 Bit        Muxes := 2     
+	   2 Input  745 Bit        Muxes := 2     
+	   2 Input  740 Bit        Muxes := 2     
+	   2 Input  735 Bit        Muxes := 2     
+	   2 Input  723 Bit        Muxes := 2     
+	   2 Input  718 Bit        Muxes := 2     
+	   2 Input  713 Bit        Muxes := 2     
+	   2 Input  701 Bit        Muxes := 2     
+	   2 Input  696 Bit        Muxes := 2     
+	   2 Input  691 Bit        Muxes := 2     
+	   5 Input  679 Bit        Muxes := 2     
+	   2 Input  657 Bit        Muxes := 2     
+	   2 Input  652 Bit        Muxes := 2     
+	   2 Input  647 Bit        Muxes := 2     
+	   2 Input  635 Bit        Muxes := 2     
+	   2 Input  630 Bit        Muxes := 2     
+	   2 Input  625 Bit        Muxes := 2     
+	   2 Input  613 Bit        Muxes := 2     
+	   2 Input  608 Bit        Muxes := 2     
+	   2 Input  603 Bit        Muxes := 2     
+	   5 Input  591 Bit        Muxes := 2     
+	   2 Input  569 Bit        Muxes := 2     
+	   2 Input  564 Bit        Muxes := 2     
+	   2 Input  559 Bit        Muxes := 2     
+	   2 Input  547 Bit        Muxes := 2     
+	   2 Input  542 Bit        Muxes := 2     
+	   2 Input  537 Bit        Muxes := 2     
+	   2 Input  525 Bit        Muxes := 2     
+	   2 Input  520 Bit        Muxes := 2     
+	   2 Input  515 Bit        Muxes := 2     
+	   5 Input  503 Bit        Muxes := 2     
+	   2 Input  481 Bit        Muxes := 2     
+	   2 Input  476 Bit        Muxes := 2     
+	   2 Input  471 Bit        Muxes := 2     
+	   2 Input  459 Bit        Muxes := 2     
+	   2 Input  454 Bit        Muxes := 2     
+	   2 Input  449 Bit        Muxes := 2     
+	   2 Input  437 Bit        Muxes := 2     
+	   2 Input  432 Bit        Muxes := 2     
+	   2 Input  427 Bit        Muxes := 2     
+	   5 Input  415 Bit        Muxes := 2     
+	   2 Input  393 Bit        Muxes := 2     
+	   2 Input  388 Bit        Muxes := 2     
+	   2 Input  383 Bit        Muxes := 2     
+	   2 Input  371 Bit        Muxes := 2     
+	   2 Input  366 Bit        Muxes := 2     
+	   2 Input  361 Bit        Muxes := 2     
+	   2 Input  349 Bit        Muxes := 2     
+	   2 Input  344 Bit        Muxes := 2     
+	   2 Input  339 Bit        Muxes := 2     
+	   5 Input  327 Bit        Muxes := 2     
+	   2 Input  305 Bit        Muxes := 2     
+	   2 Input  300 Bit        Muxes := 2     
+	   2 Input  295 Bit        Muxes := 2     
+	   2 Input  283 Bit        Muxes := 2     
+	   2 Input  278 Bit        Muxes := 2     
+	   2 Input  273 Bit        Muxes := 2     
+	   2 Input  261 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 2     
+	   2 Input  251 Bit        Muxes := 2     
+	   5 Input  239 Bit        Muxes := 2     
+	   2 Input  217 Bit        Muxes := 2     
+	   2 Input  212 Bit        Muxes := 2     
+	   2 Input  207 Bit        Muxes := 2     
+	   2 Input  195 Bit        Muxes := 2     
+	   2 Input  190 Bit        Muxes := 2     
+	   2 Input  185 Bit        Muxes := 2     
+	   2 Input  173 Bit        Muxes := 2     
+	   2 Input  168 Bit        Muxes := 2     
+	   2 Input  163 Bit        Muxes := 2     
+	   5 Input  151 Bit        Muxes := 2     
+	   2 Input  129 Bit        Muxes := 2     
+	   2 Input  124 Bit        Muxes := 2     
+	   2 Input  119 Bit        Muxes := 2     
+	   2 Input  107 Bit        Muxes := 2     
+	   2 Input  102 Bit        Muxes := 2     
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   85 Bit        Muxes := 2     
+	   2 Input   80 Bit        Muxes := 2     
+	   2 Input   75 Bit        Muxes := 2     
+	   2 Input   72 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 15    
+	   5 Input   63 Bit        Muxes := 2     
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   51 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   45 Bit        Muxes := 1     
+	   2 Input   44 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 1     
+	   2 Input   41 Bit        Muxes := 3     
+	   2 Input   37 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 83    
+	   4 Input   32 Bit        Muxes := 10    
+	   9 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 3     
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 3     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 4     
+	   2 Input   19 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 14    
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 13    
+	   2 Input    5 Bit        Muxes := 36    
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 42    
+	   3 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 20    
+	   5 Input    3 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 144   
+	   5 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 30    
+	   4 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 368   
+	  65 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'k_65_reg_13192_reg[0]' (FDE) to 'k_67_reg_13179_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_67_reg_13179_reg[0]' (FDE) to 'k_69_reg_13165_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_68_reg_13172_reg[0]' (FDE) to 'k_72_reg_13144_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_69_reg_13165_reg[0]' (FDE) to 'k_71_reg_13151_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_71_reg_13151_reg[0]' (FDE) to 'k_73_reg_13137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_72_reg_13144_reg[0]' (FDE) to 'k_80_reg_13088_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_73_reg_13137_reg[0]' (FDE) to 'k_75_reg_13123_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_75_reg_13123_reg[0]' (FDE) to 'k_77_reg_13109_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_77_reg_13109_reg[0]' (FDE) to 'k_79_reg_13095_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_79_reg_13095_reg[0]' (FDE) to 'k_83_reg_13067_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_80_reg_13088_reg[0]' (FDE) to 'k_84_reg_13060_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_83_reg_13067_reg[0]' (FDE) to 'k_85_reg_13053_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_84_reg_13060_reg[0]' (FDE) to 'k_96_reg_12976_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_85_reg_13053_reg[0]' (FDE) to 'k_87_reg_13039_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_87_reg_13039_reg[0]' (FDE) to 'k_89_reg_13025_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_89_reg_13025_reg[0]' (FDE) to 'k_91_reg_13011_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_91_reg_13011_reg[0]' (FDE) to 'k_93_reg_12997_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_93_reg_12997_reg[0]' (FDE) to 'k_95_reg_12983_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_95_reg_12983_reg[0]' (FDE) to 'k_99_reg_12955_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_96_reg_12976_reg[0]' (FDE) to 'k_100_reg_12948_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_99_reg_12955_reg[0]' (FDE) to 'k_101_reg_12941_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_100_reg_12948_reg[0]' (FDE) to 'k_104_reg_12920_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_101_reg_12941_reg[0]' (FDE) to 'k_105_reg_12913_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_104_reg_12920_reg[0]' (FDE) to 'k_108_reg_12892_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_105_reg_12913_reg[0]' (FDE) to 'k_107_reg_12899_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_107_reg_12899_reg[0]' (FDE) to 'k_109_reg_12885_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_108_reg_12892_reg[0]' (FDE) to 'k_116_reg_12836_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_109_reg_12885_reg[0]' (FDE) to 'k_111_reg_12871_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_111_reg_12871_reg[0]' (FDE) to 'k_113_reg_12857_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_113_reg_12857_reg[0]' (FDE) to 'k_117_reg_12829_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_116_reg_12836_reg[0]' (FDE) to 'k_120_reg_12808_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_117_reg_12829_reg[0]' (FDE) to 'k_119_reg_12815_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_119_reg_12815_reg[0]' (FDE) to 'k_121_reg_12801_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_120_reg_12808_reg[0]' (FDE) to 'k_124_reg_12780_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_121_reg_12801_reg[0]' (FDE) to 'k_123_reg_12787_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_123_reg_12787_reg[0]' (FDE) to 'k_125_reg_12773_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_124_reg_12780_reg[0]' (FDE) to 'add_ln104_reg_12748_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_125_reg_12773_reg[0]' (FDE) to 'k_127_reg_12759_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln104_reg_12748_reg[1]' (FDE) to 'k_104_reg_12920_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_104_reg_12920_reg[1]' (FDE) to 'k_96_reg_12976_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_96_reg_12976_reg[1]' (FDE) to 'k_80_reg_13088_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_80_reg_13088_reg[1]' (FDE) to 'k_120_reg_12808_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_120_reg_12808_reg[1]' (FDE) to 'k_72_reg_13144_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_80_reg_13088_reg[2]' (FDE) to 'k_96_reg_12976_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k_96_reg_12976_reg[2]' (FDE) to 'add_ln104_reg_12748_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k_96_reg_12976_reg[3]' (FDE) to 'add_ln104_reg_12748_reg[3]'
+INFO: [Synth 8-3886] merging instance 'k_1_reg_12573_reg[0]' (FDE) to 'k_3_reg_12558_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_3_reg_12558_reg[0]' (FDE) to 'k_5_reg_12542_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_4_reg_12550_reg[0]' (FDE) to 'k_8_reg_12518_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_5_reg_12542_reg[0]' (FDE) to 'k_7_reg_12526_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_7_reg_12526_reg[0]' (FDE) to 'k_9_reg_12510_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_8_reg_12518_reg[0]' (FDE) to 'k_12_reg_12486_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_9_reg_12510_reg[0]' (FDE) to 'k_11_reg_12494_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_11_reg_12494_reg[0]' (FDE) to 'k_13_reg_12478_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_12_reg_12486_reg[0]' (FDE) to 'k_16_reg_12454_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_13_reg_12478_reg[0]' (FDE) to 'k_15_reg_12462_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_15_reg_12462_reg[0]' (FDE) to 'k_17_reg_12446_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_16_reg_12454_reg[0]' (FDE) to 'k_20_reg_12422_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_17_reg_12446_reg[0]' (FDE) to 'k_19_reg_12430_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_19_reg_12430_reg[0]' (FDE) to 'k_21_reg_12414_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_20_reg_12422_reg[0]' (FDE) to 'k_24_reg_12390_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_21_reg_12414_reg[0]' (FDE) to 'k_23_reg_12398_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_23_reg_12398_reg[0]' (FDE) to 'k_25_reg_12382_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_24_reg_12390_reg[0]' (FDE) to 'k_28_reg_12358_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_25_reg_12382_reg[0]' (FDE) to 'k_27_reg_12366_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_27_reg_12366_reg[0]' (FDE) to 'k_29_reg_12350_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_28_reg_12358_reg[0]' (FDE) to 'k_32_reg_12326_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_29_reg_12350_reg[0]' (FDE) to 'k_31_reg_12334_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_31_reg_12334_reg[0]' (FDE) to 'k_33_reg_12318_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_32_reg_12326_reg[0]' (FDE) to 'k_36_reg_12294_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_33_reg_12318_reg[0]' (FDE) to 'k_35_reg_12302_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_35_reg_12302_reg[0]' (FDE) to 'k_37_reg_12286_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_36_reg_12294_reg[0]' (FDE) to 'k_40_reg_12262_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_37_reg_12286_reg[0]' (FDE) to 'k_39_reg_12270_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_39_reg_12270_reg[0]' (FDE) to 'k_41_reg_12254_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_40_reg_12262_reg[0]' (FDE) to 'k_44_reg_12230_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_41_reg_12254_reg[0]' (FDE) to 'k_43_reg_12238_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_43_reg_12238_reg[0]' (FDE) to 'k_45_reg_12222_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_44_reg_12230_reg[0]' (FDE) to 'k_48_reg_12198_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_45_reg_12222_reg[0]' (FDE) to 'k_47_reg_12206_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_47_reg_12206_reg[0]' (FDE) to 'k_49_reg_12190_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_49_reg_12190_reg[0]' (FDE) to 'k_55_reg_12142_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_55_reg_12142_reg[0]' (FDE) to 'k_57_reg_12126_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_57_reg_12126_reg[0]' (FDE) to 'k_61_reg_12094_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_61_reg_12094_reg[0]' (FDE) to 'k_63_reg_12078_reg[0]'
+INFO: [Synth 8-3886] merging instance 'k_8_reg_12518_reg[1]' (FDE) to 'k_16_reg_12454_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_16_reg_12454_reg[1]' (FDE) to 'k_24_reg_12390_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_24_reg_12390_reg[1]' (FDE) to 'k_32_reg_12326_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_32_reg_12326_reg[1]' (FDE) to 'k_40_reg_12262_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_40_reg_12262_reg[1]' (FDE) to 'k_48_reg_12198_reg[1]'
+INFO: [Synth 8-3886] merging instance 'k_16_reg_12454_reg[2]' (FDE) to 'k_32_reg_12326_reg[2]'
+INFO: [Synth 8-3886] merging instance 'k_32_reg_12326_reg[2]' (FDE) to 'k_48_reg_12198_reg[2]'
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_32s_32s_32_2_0.v:36]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [d:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/83aa/hdl/verilog/convex_hull_accel_mul_32s_32s_32_2_0.v:36]
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U18/tmp_product, operation Mode is: A2*B2.
+DSP Report: register sub_ln8_3_reg_101_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: register mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U18/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register sub_ln8_2_reg_96_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: register sub_ln8_3_reg_101_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U18/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U18/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: register mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U18/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register sub_ln8_2_reg_96_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U18/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U18/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U18/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U18/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U17/tmp_product, operation Mode is: A2*B2.
+DSP Report: register sub_ln8_1_reg_91_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: register mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U17/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register sub_ln8_reg_86_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: register sub_ln8_1_reg_91_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U17/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U17/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: register mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_0_U17/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register sub_ln8_reg_86_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U17/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_0_U17/buff0_reg is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_0_U17/tmp_product is absorbed into DSP mul_32s_32s_32_2_0_U17/buff0_reg.
+DSP Report: Generating DSP mul_ln34_reg_1201_reg, operation Mode is: (A*B)'.
+DSP Report: register mul_ln34_reg_1201_reg is absorbed into DSP mul_ln34_reg_1201_reg.
+DSP Report: operator mul_15s_15s_15_1_1_U96/tmp_product is absorbed into DSP mul_ln34_reg_1201_reg.
+DSP Report: Generating DSP bound_reg_1218_reg, operation Mode is: (A2*B2)'.
+DSP Report: register bound_reg_1218_reg is absorbed into DSP bound_reg_1218_reg.
+DSP Report: register bound_reg_1218_reg is absorbed into DSP bound_reg_1218_reg.
+DSP Report: register bound_reg_1218_reg is absorbed into DSP bound_reg_1218_reg.
+DSP Report: operator mul_8ns_8ns_16_1_1_U97/tmp_product is absorbed into DSP bound_reg_1218_reg.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5784] Optimized 9 bits of RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 9 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-7082] The signal store_unit/buff_wdata/U_fifo_mem/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM store_unit/buff_wdata/U_fifo_mem/mem_reg to conserve power
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem1_m_axi_U/\load_unit/fifo_rreq/full_n_reg )
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][0]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][1]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][1]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][2]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][2]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][3]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][3]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][4]' (FDE) to 'out_img_data_fifo_U/U_convex_hull_accel_fifo_w8_d2_S_ShiftReg/SRL_SIG_reg[1][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln34_cast_reg_1211_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_burst_conv/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem0_m_axi_U/\store_unit/fifo_wreq/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem0_m_axi_U/\store_unit/buff_wdata/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\store_unit/bus_wide_gen.pad_oh_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.len_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.len_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.pad_oh_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[0].strb_buf_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[1].strb_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[2].strb_buf_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[3].strb_buf_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[0].data_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[1].data_buf_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[2].data_buf_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.data_gen[3].data_buf_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.len_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.len_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_read/rreq_burst_conv/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.len_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.len_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.len_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.len_buf_reg[7] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/fifo_rreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\load_unit/fifo_rreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_burst_conv/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/fifo_wreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/fifo_burst/U_fifo_srl/dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/fifo_burst/U_fifo_srl/dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/data_buf_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_read/rreq_burst_conv/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/tmp_addr_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/tmp_addr_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/tmp_valid_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\store_unit/fifo_wreq/U_fifo_srl/dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/tmp_valid_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_throttle/req_fifo/U_fifo_srl/dout_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_throttle/req_fifo/U_fifo_srl/dout_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/fifo_rreq/empty_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/rs_req/data_p2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/rs_req/data_p2_reg[81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p2_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem1_m_axi_U/\load_unit/bus_wide_gen.rreq_offset/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.wreq_offset/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p2_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/fifo_wrsp/U_fifo_srl/dout_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p2_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_throttle/data_fifo/U_fifo_srl/dout_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/fifo_rreq/dout_vld_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/rs_req/data_p1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\store_unit/bus_wide_gen.wreq_offset/U_fifo_srl/dout_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/bus_wide_gen.rreq_offset/U_fifo_srl/dout_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p1_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p1_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/start_addr_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/tmp_len_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/start_addr_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/sect_addr_buf_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p1_reg[81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/sect_addr_buf_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem0_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\load_unit/bus_wide_gen.rreq_offset/U_fifo_srl/dout_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/sect_total_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/sect_len_buf_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.last_loop_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem1_m_axi_U/\bus_read/rreq_burst_conv/last_sect_buf_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem1_m_axi_U/\bus_read/fifo_burst/full_n_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (gmem1_m_axi_U/\bus_read/fifo_rctl/full_n_reg )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[47]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[46]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[45]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[44]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[43]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[42]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[41]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[40]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[39]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[38]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[37]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[36]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[35]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[34]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[33]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[32]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[31]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[30]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[29]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[28]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[27]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[26]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[25]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[24]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[23]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[22]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[21]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[20]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[19]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[18]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[17]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[16]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[15]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[47]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[46]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[45]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[44]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[43]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[42]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[41]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[40]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[39]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[38]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[37]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[36]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[35]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[34]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[33]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[32]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[31]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[30]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[29]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[28]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[27]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[26]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[25]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[24]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[23]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[22]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[21]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[20]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[19]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[18]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U18/buff0_reg[17]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[47]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[46]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[45]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[44]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[43]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[42]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[41]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[40]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[39]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[38]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[37]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[36]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[35]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[34]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[33]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[32]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[31]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[30]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[29]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[28]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[27]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[26]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[25]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[24]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[23]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[22]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[21]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[20]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[19]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[18]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[17]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[16]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[15]) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[47]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[46]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_0_U17/buff0_reg[45]__0) is unused and will be removed from module convex_hull_accel_cross_r.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:12:14 ; elapsed = 00:13:50 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U17/tmp_product_0 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U17/tmp_product_0 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U18/tmp_product_6 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U18/tmp_product_6 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U17/tmp_product_3 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U17/tmp_product_3 : 0 1 : 2563 5230 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U18/tmp_product_7 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_32s_32s_32_2_0_U18/tmp_product_7 : 0 1 : 2563 5230 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 mul_ln34_reg_1201_reg_8 : 0 0 : 1726 1726 : Used 1 time 0
+ Sort Area is convex_hull_accel__GC0 bound_reg_1218_reg_a : 0 0 : 614 614 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gmem0_m_axi_U | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|gmem1_m_axi_U | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 9(READ_FIRST)     | W |   | 63 x 9(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------+--------------------+-----------+----------------------+----------------+
+|Module Name            | RTL Object         | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------+--------------------+-----------+----------------------+----------------+
+|convex_hull_accel__GC0 | pts_x_U/ram_reg    | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_1_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_2_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_3_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_U/ram_reg    | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_1_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_2_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_3_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_U/ram_reg   | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_U/ram_reg   | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-----------------------+--------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|convex_hull_accel_cross_r | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel__GC0    | (A*B)'           | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|convex_hull_accel__GC0    | (A2*B2)'         | 9      | 9      | -      | -      | 18     | 1    | 1    | -    | -    | -     | 1    | 0    | 
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:12:52 ; elapsed = 00:14:30 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:21:54 ; elapsed = 00:24:17 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|gmem0_m_axi_U | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|gmem1_m_axi_U | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 9(READ_FIRST)     | W |   | 63 x 9(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
++--------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------+--------------------+-----------+----------------------+----------------+
+|Module Name            | RTL Object         | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------+--------------------+-----------+----------------------+----------------+
+|convex_hull_accel__GC0 | hull_y_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_U/ram_reg    | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_1_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_2_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_x_3_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_U/ram_reg    | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_1_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_2_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | pts_y_3_U/ram_reg  | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_U/ram_reg   | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_1_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_U/ram_reg   | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_2_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_y_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
+|convex_hull_accel__GC0 | hull_x_3_U/ram_reg | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-----------------------+--------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem0_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_0/gmem1_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:22:39 ; elapsed = 00:25:48 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:23:30 ; elapsed = 00:26:45 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:23:31 ; elapsed = 00:26:46 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:23:44 ; elapsed = 00:27:01 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:23:44 ; elapsed = 00:27:01 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:23:48 ; elapsed = 00:27:06 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:23:48 ; elapsed = 00:27:06 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|convex_hull_accel | ap_CS_fsm_reg[49] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|convex_hull_accel | ap_CS_fsm_reg[8]  | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name    | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[14] | 34     | 34         | 34     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[5]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[5]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14] | 4      | 4          | 4      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | mem_reg[14] | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14] | 37     | 37         | 37     | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[14] | 34     | 34         | 34     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[2]  | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[2]  | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__12    | mem_reg[14] | 4      | 4          | 4      | 0       | 0      | 0      | 0      | 
+|dsrl__13    | mem_reg[14] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__14    | mem_reg[14] | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__15    | mem_reg[14] | 37     | 37         | 37     | 0       | 0      | 0      | 0      | 
++------------+-------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|convex_hull_accel__GC0    | (A'*B')'         | 30     | 18     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel__GC0    | (A'*B')'         | 8      | 8      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | (A'*B')'         | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | A'*B'            | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17+A*B')' | 0      | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | (A'*B')'         | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|convex_hull_accel_cross_r | A'*B'            | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convex_hull_accel_cross_r | (PCIN>>17+A*B')' | 0      | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++--------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  2394|
+|2     |DSP48E1  |     8|
+|6     |LUT1     |  3920|
+|7     |LUT2     |  4780|
+|8     |LUT3     |  1865|
+|9     |LUT4     |  3835|
+|10    |LUT5     |  2142|
+|11    |LUT6     |  5847|
+|12    |MUXF7    |    15|
+|13    |RAM16X1S |   512|
+|14    |RAMB18E1 |     2|
+|16    |SRL16E   |   309|
+|17    |FDRE     | 16406|
+|18    |FDSE     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:23:49 ; elapsed = 00:27:06 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 265 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:15:52 ; elapsed = 00:20:59 . Memory (MB): peak = 6036.520 ; gain = 1593.949
+Synthesis Optimization Complete : Time (s): cpu = 00:23:49 ; elapsed = 00:27:13 . Memory (MB): peak = 6036.520 ; gain = 5134.191
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2931 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 512 instances
+
+El sistema no puede encontrar la ruta especificada.
+Synth Design complete | Checksum: 1434bdf7
+INFO: [Common 17-83] Releasing license: Synthesis
+437 Infos, 211 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:24:30 ; elapsed = 00:28:08 . Memory (MB): peak = 6036.520 ; gain = 5554.539
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6036.520 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 6036.520 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 5bdc8d6ec9643793
+INFO: [Coretcl 2-1174] Renamed 96 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.383 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+write_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 6036.520 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 6036.520 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 23 19:16:18 2025...

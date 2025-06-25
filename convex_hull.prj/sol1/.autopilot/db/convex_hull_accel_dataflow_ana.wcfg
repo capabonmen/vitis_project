@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="convex_hull_accel.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_convex_hull_accel_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel//AESL_inst_convex_hull_accel_activity">
+         <obj_property name="label">AESL_inst_convex_hull_accel_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_convex_hull_accel_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_convex_hull_accel_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel//AESL_inst_convex_hull_accel_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel//AESL_inst_convex_hull_accel_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel//AESL_inst_convex_hull_accel_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity">
+            <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel//AESL_inst_convex_hull_accel_activity">
+      <obj_property name="ElementShortName">AESL_inst_convex_hull_accel_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_convex_hull_accel_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_convex_hull_accel_group">
+      <obj_property name="label">AESL_inst_convex_hull_accel</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity">
+         <obj_property name="ElementShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_convex_hull_accel_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_group">
+         <obj_property name="label">grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_convex_hull_accel_top/AESL_inst_convex_hull_accel/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,458 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>10.751</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>10.751</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>10.751</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>-0.751</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>-0.751</SLACK_SYNTH>
+    <TIMING_MET>FALSE</TIMING_MET>
+    <TNS_FINAL>-198.915</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>-198.915</TNS_SYNTH>
+    <WNS_FINAL>-0.751</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>-0.751</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>2</BRAM>
+      <CLB>0</CLB>
+      <DSP>8</DSP>
+      <FF>16431</FF>
+      <LATCH>0</LATCH>
+      <LUT>19517</LUT>
+      <SRL>309</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="convex_hull_accel" DISPNAME="inst" RTLNAME="convex_hull_accel">
+      <SubModules count="36">control_r_s_axi_U control_s_axi_U gmem0_m_axi_U gmem1_m_axi_U grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646 grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668 grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692 grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698 grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714 grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621 grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630 grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723 grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729 grp_cross_r_fu_1481 hull_x_1_U hull_x_2_U hull_x_3_U hull_x_U hull_y_1_U hull_y_2_U hull_y_3_U hull_y_U in_img_data_fifo_U out_img_data_fifo_U pts_x_1_U pts_x_2_U pts_x_3_U pts_x_U pts_y_1_U pts_y_2_U pts_y_3_U pts_y_U sparsemux_9_2_32_1_1_U100 sparsemux_9_2_32_1_1_U95 sparsemux_9_2_32_1_1_U98 sparsemux_9_2_32_1_1_U99</SubModules>
+      <Resources BRAM="2" DSP="8" FF="16431" LUT="19517"/>
+      <LocalResources DSP="2" FF="715" LUT="133"/>
+    </RtlModule>
+    <RtlModule CELL="inst/control_r_s_axi_U" BINDMODULE="convex_hull_accel_control_r_s_axi" DEPTH="1" TYPE="resource" MODULENAME="control_r_s_axi" DISPNAME="control_r_s_axi_U" RTLNAME="convex_hull_accel_control_r_s_axi">
+      <Resources FF="171" LUT="111"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control_r" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_r_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/control_s_axi_U" BINDMODULE="convex_hull_accel_control_s_axi" DEPTH="1" TYPE="resource" MODULENAME="control_s_axi" DISPNAME="control_s_axi_U" RTLNAME="convex_hull_accel_control_s_axi">
+      <Resources FF="152" LUT="165"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/gmem0_m_axi_U" BINDMODULE="convex_hull_accel_gmem0_m_axi" DEPTH="1" TYPE="resource" MODULENAME="gmem0_m_axi" DISPNAME="gmem0_m_axi_U" RTLNAME="convex_hull_accel_gmem0_m_axi">
+      <Resources BRAM="1" FF="854" LUT="662"/>
+      <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="gmem0" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem0_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/gmem1_m_axi_U" BINDMODULE="convex_hull_accel_gmem1_m_axi" DEPTH="1" TYPE="resource" MODULENAME="gmem1_m_axi" DISPNAME="gmem1_m_axi_U" RTLNAME="convex_hull_accel_gmem1_m_axi">
+      <Resources BRAM="1" FF="1202" LUT="922"/>
+      <BindNode BINDTYPE="adapter" BRAM="2" BUNDLEDNAME="gmem1" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="gmem1_m_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="m_axi" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_104_11" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_104_11">
+      <SubModules count="2">sparsemux_9_2_32_1_1_U26 sparsemux_9_2_32_1_1_U27</SubModules>
+      <Resources FF="6120" LUT="7982"/>
+      <LocalResources FF="6120" LUT="7918"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/sparsemux_9_2_32_1_1_U26" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="2" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U26" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/sparsemux_9_2_32_1_1_U27" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="2" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U27" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_118_13" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_118_13">
+      <SubModules count="2">sparsemux_9_2_32_1_1_U47 sparsemux_9_2_32_1_1_U48</SubModules>
+      <Resources FF="6127" LUT="8013"/>
+      <LocalResources FF="6127" LUT="7949"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/sparsemux_9_2_32_1_1_U47" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="2" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U47" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/sparsemux_9_2_32_1_1_U48" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="2" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U48" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="19" LUT="34"/>
+      <LocalResources FF="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16_fu_692/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_143_17" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_143_17">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="45" LUT="177"/>
+      <LocalResources FF="43" LUT="103"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_143_17_fu_698/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="74"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="22" LUT="40"/>
+      <LocalResources FF="20" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19_fu_714/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="37"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="29" LUT="39"/>
+      <LocalResources FF="27" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2_fu_621/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="36"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="73" LUT="184"/>
+      <LocalResources FF="71" LUT="148"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4_fu_630/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="36"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="19" LUT="34"/>
+      <LocalResources FF="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6_fu_723/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729" DEPTH="1" TYPE="function" MODULENAME="convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8" DISPNAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729" RTLNAME="convex_hull_accel_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="22" LUT="43"/>
+      <LocalResources FF="20" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8_fu_729/flow_control_loop_pipe_sequential_init_U" BINDMODULE="convex_hull_accel_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="convex_hull_accel_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="37"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_cross_r_fu_1481" DEPTH="1" TYPE="resource" MODULENAME="cross_r" DISPNAME="grp_cross_r_fu_1481" RTLNAME="convex_hull_accel_cross_r">
+      <SubModules count="2">mul_32s_32s_32_2_0_U17 mul_32s_32s_32_2_0_U18</SubModules>
+      <Resources DSP="6" FF="323" LUT="206"/>
+      <LocalResources FF="289" LUT="48"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ram_1wnr" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_90_10" OPTYPE="ram_1wnr" PRAGMA="" RTLNAME="grp_cross_r_fu_1481" SOURCE="./accel.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="pts_y_1_load_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ram_1wnr" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_90_10" OPTYPE="ram_1wnr" PRAGMA="" RTLNAME="grp_cross_r_fu_1481" SOURCE="./accel.cpp:92" STORAGESUBTYPE="" URAM="0" VARIABLE="pts_y_load_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ram_1wnr" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_90_10" OPTYPE="ram_1wnr" PRAGMA="" RTLNAME="grp_cross_r_fu_1481" SOURCE="./accel.cpp:92" STORAGESUBTYPE="" URAM="0" VARIABLE="pts_x_3_addr_3_write_ln92"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ram_1wnr" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="VITIS_LOOP_85_9" OPTYPE="ram_1wnr" PRAGMA="" RTLNAME="grp_cross_r_fu_1481" SOURCE="./accel.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="pts_x_2_addr_2_write_ln95"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_cross_r_fu_1481/mul_32s_32s_32_2_0_U17" BINDMODULE="convex_hull_accel_mul_32s_32s_32_2_0" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_0" DISPNAME="mul_32s_32s_32_2_0_U17" RTLNAME="convex_hull_accel_mul_32s_32s_32_2_0">
+      <Resources DSP="3" FF="17" LUT="79"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_0_U17" SOURCE="./accel.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln8"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_0_U17" SOURCE="./accel.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_cross_r_fu_1481/mul_32s_32s_32_2_0_U18" BINDMODULE="convex_hull_accel_mul_32s_32s_32_2_0" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_0" DISPNAME="mul_32s_32s_32_2_0_U18" RTLNAME="convex_hull_accel_mul_32s_32s_32_2_0">
+      <Resources DSP="3" FF="17" LUT="79"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_0_U18" SOURCE="./accel.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln8_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_0_U18" SOURCE="./accel.cpp:8" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln8_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_x_1_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_x_1_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_x_1_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_x_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_x_2_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_x_2_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_x_2_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_x_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_x_3_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_x_3_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_x_3_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_x_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_x_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_x_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="33"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_x_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_x"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_y_1_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_y_1_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_y_1_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_y_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_y_2_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_y_2_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_y_2_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_y_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_y_3_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_y_3_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_y_3_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_y_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/hull_y_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="hull_y_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="hull_y_U" SOURCE="./accel.cpp:99" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="hull_y"/>
+    </RtlModule>
+    <RtlModule CELL="inst/in_img_data_fifo_U" BINDMODULE="convex_hull_accel_fifo_w8_d2_S" DEPTH="1" TYPE="resource" MODULENAME="fifo_w8_d2_S" DISPNAME="in_img_data_fifo_U" RTLNAME="convex_hull_accel_fifo_w8_d2_S">
+      <Resources FF="20" LUT="16"/>
+      <LocalResources FF="4" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="in_img_data_fifo_U" SOURCE="./accel.cpp:29" STORAGESIZE="8 2 1" STORAGESUBTYPE="" STORAGEUSAGE="fifo array" URAM="0" VARIABLE="in_img_data"/>
+    </RtlModule>
+    <RtlModule CELL="inst/out_img_data_fifo_U" BINDMODULE="convex_hull_accel_fifo_w8_d2_S" DEPTH="1" TYPE="resource" MODULENAME="fifo_w8_d2_S" DISPNAME="out_img_data_fifo_U" RTLNAME="convex_hull_accel_fifo_w8_d2_S">
+      <Resources FF="6" LUT="9"/>
+      <LocalResources FF="4" LUT="5"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="out_img_data_fifo_U" SOURCE="./accel.cpp:30" STORAGESIZE="8 2 1" STORAGESUBTYPE="" STORAGEUSAGE="fifo array" URAM="0" VARIABLE="out_img_data"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_x_1_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_x_1_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="33"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_x_1_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_x_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_x_2_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_x_2_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="33"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_x_2_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_x_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_x_3_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_x_3_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="78"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_x_3_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_x_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_x_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_x_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="33"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_x_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_x"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_y_1_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_y_1_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="73"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_y_1_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_y_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_y_2_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_y_2_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_y_2_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_y_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_y_3_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_y_3_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="46"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_y_3_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_y_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pts_y_U" BINDMODULE="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="pts_x_RAM_1WNR_AUTO_1R1W" DISPNAME="pts_y_U" RTLNAME="convex_hull_accel_pts_x_RAM_1WNR_AUTO_1R1W">
+      <Resources FF="32" LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="pts_y_U" SOURCE="./accel.cpp:44" STORAGESIZE="32 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="pts_y"/>
+    </RtlModule>
+    <RtlModule CELL="inst/sparsemux_9_2_32_1_1_U100" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="1" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U100" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/sparsemux_9_2_32_1_1_U95" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="1" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U95" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/sparsemux_9_2_32_1_1_U98" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="1" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U98" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+    <RtlModule CELL="inst/sparsemux_9_2_32_1_1_U99" BINDMODULE="convex_hull_accel_sparsemux_9_2_32_1_1" DEPTH="1" TYPE="rtl" MODULENAME="sparsemux_9_2_32_1_1" DISPNAME="sparsemux_9_2_32_1_1_U99" RTLNAME="convex_hull_accel_sparsemux_9_2_32_1_1">
+      <Resources LUT="32"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[0]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_0_0/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[10]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_10_10/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[11]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_11_11/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[11]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[12]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_12_12/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[13]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_13_13/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[13]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[14]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_14_14/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[15]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_15_15/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[15]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[16]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_16_16/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[17]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_17_17/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[17]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="10.651" DATAPATH_LOGIC_DELAY="2.913" DATAPATH_NET_DELAY="7.738" ENDPOINT_PIN="hull_x_1_U/q0_reg[18]/D" LOGIC_LEVELS="13" MAX_FANOUT="115" SLACK="-0.751" STARTPOINT_PIN="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep/C">
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/k_62_reg_12086_reg[0]_rep" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm[486]_i_54__0" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="21163"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_37" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_23" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_9" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ap_CS_fsm_reg[486]_i_3__0" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="5543"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/q0[31]_i_189" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_423" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_417" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_149" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_59" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_118_13_fu_668/ram_reg_0_15_0_0_i_20__0" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="10751"/>
+      <CELL NAME="grp_convex_hull_accel_Pipeline_VITIS_LOOP_104_11_fu_646/ram_reg_0_15_0_0_i_4__1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="hull_x_1_U/ram_reg_0_15_18_18/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" LINE_NUMBER=""/>
+      <CELL NAME="hull_x_1_U/q0_reg[18]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="43"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/convex_hull_accel_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/convex_hull_accel_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/convex_hull_accel_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/convex_hull_accel_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/convex_hull_accel_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/convex_hull_accel_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Jun 23 19:22:21 -0300 2025"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="convex_hull.prj"/>
+    <item NAME="Solution" VALUE="sol1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

@@ -1,0 +1,432 @@
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:1454:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:1454:7: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2428:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2428:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2442:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2442:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2456:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:2456:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:4085:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:4085:7: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15330:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15330:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15344:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15344:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15359:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15359:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15374:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15374:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15389:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15389:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15404:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15404:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15419:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15419:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15434:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15434:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15449:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15449:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15526:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15526:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15734:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15734:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15735:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15735:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15736:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15736:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15738:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15738:17: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15776:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15776:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15777:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15777:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15779:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15779:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15780:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15780:17: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15834:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15834:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15835:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15835:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15843:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15843:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:15956:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16028:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16028:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16436:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16436:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16464:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16464:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16494:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16494:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16524:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16524:13: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16823:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16823:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16827:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16827:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16854:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16854:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16858:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16858:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16885:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16885:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16889:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16889:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16916:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16916:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16920:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16920:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16966:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:16966:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17029:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17029:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17226:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17231:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17236:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17241:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17246:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17251:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17256:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17261:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17317:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17317:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17343:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17343:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17399:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17399:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17495:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17495:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17514:5: warning: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_58_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17514:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17542:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_86_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17542:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17575:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_119_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17575:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17609:5: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_153_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17609:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17637:5: warning: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_181_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17637:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17661:5: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_205_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17661:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17684:5: warning: Added loop label VITIS_LOOP_228_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_228_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17684:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17719:5: warning: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (uint16_t r = 0; r < K_ROWS; r++) {
+    ^~~
+    VITIS_LOOP_263_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17719:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17721:2: warning: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+ for (uint16_t c = 0; c < K_COLS; c++) {
+ ^~~
+ VITIS_LOOP_265_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17721:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17781:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (ap_int<9> i = 0; i < loopIter; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17781:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17853:5: warning: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 6; i++, ind++) {
+    ^~~
+    VITIS_LOOP_397_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17853:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17924:5: warning: Added loop label VITIS_LOOP_468_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < imheight; i++) {
+    ^~~
+    VITIS_LOOP_468_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17924:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17929:2: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imwidth >> NPC); j++) {
+ ^~~
+ VITIS_LOOP_473_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17929:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17955:9: warning: Added loop label VITIS_LOOP_499_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_499_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:17955:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18061:9: warning: Added loop label VITIS_LOOP_623_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_623_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18061:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18175:9: warning: Added loop label VITIS_LOOP_737_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_737_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18175:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18207:9: warning: Added loop label VITIS_LOOP_788_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_788_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18207:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18331:5: warning: Added loop label VITIS_LOOP_34_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_34_1: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18331:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18333:2: warning: Added loop label VITIS_LOOP_36_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_36_2: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18333:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18344:5: warning: Added loop label VITIS_LOOP_47_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_47_3: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18344:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18346:2: warning: Added loop label VITIS_LOOP_49_4:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_49_4: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18346:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18360:9: warning: Added loop label VITIS_LOOP_63_5:   [xilinx-label-all-loops]
+        for (int r = 0; r < rows; r++) {
+        ^~~
+        VITIS_LOOP_63_5: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18360:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18362:2: warning: Added loop label VITIS_LOOP_65_6:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_65_6: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18362:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18370:9: warning: Added loop label VITIS_LOOP_73_7:   [xilinx-label-all-loops]
+        for (int r = 0; r < rows; r++) {
+        ^~~
+        VITIS_LOOP_73_7: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18370:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18372:2: warning: Added loop label VITIS_LOOP_75_8:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_75_8: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18372:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18382:5: warning: Added loop label VITIS_LOOP_85_9:   [xilinx-label-all-loops]
+    for (int i = 1; i < count; i++) {
+    ^~~
+    VITIS_LOOP_85_9: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18382:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18387:9: warning: Added loop label VITIS_LOOP_90_10:   [xilinx-label-all-loops]
+        while (j >= 0 && (pts[j].x > key.x || (pts[j].x == key.x && pts[j].y > key.y))) {
+        ^~~~~
+        VITIS_LOOP_90_10: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18387:9: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18401:5: warning: Added loop label VITIS_LOOP_104_11:   [xilinx-label-all-loops]
+    for (int i = 0; i < count; i++) {
+    ^~~
+    VITIS_LOOP_104_11: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18401:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18404:2: warning: Added loop label VITIS_LOOP_107_12:   [xilinx-label-all-loops]
+ for (int cnt = 0; cnt < 64; cnt++) {
+ ^~~
+ VITIS_LOOP_107_12: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18404:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18415:5: warning: Added loop label VITIS_LOOP_118_13:   [xilinx-label-all-loops]
+    for (int i = count - 2; i >= 0; i--) {
+    ^~~
+    VITIS_LOOP_118_13: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18415:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18418:2: warning: Added loop label VITIS_LOOP_121_14:   [xilinx-label-all-loops]
+ for (int cnt = 0; cnt < 64; cnt++) {
+ ^~~
+ VITIS_LOOP_121_14: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18418:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18431:5: warning: Added loop label VITIS_LOOP_134_15:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_134_15: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18431:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18433:2: warning: Added loop label VITIS_LOOP_136_16:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_136_16: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18433:2: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18440:5: warning: Added loop label VITIS_LOOP_143_17:   [xilinx-label-all-loops]
+    for (int i = 0; i < hs; i++) {
+    ^~~
+    VITIS_LOOP_143_17: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18440:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18451:5: warning: Added loop label VITIS_LOOP_154_18:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_154_18: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18451:5: note: FIX-IT applied suggested code changes
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18453:2: warning: Added loop label VITIS_LOOP_156_19:   [xilinx-label-all-loops]
+ for (int c = 0; c < cols; c++) {
+ ^~~
+ VITIS_LOOP_156_19: 
+D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp:18453:2: note: FIX-IT applied suggested code changes

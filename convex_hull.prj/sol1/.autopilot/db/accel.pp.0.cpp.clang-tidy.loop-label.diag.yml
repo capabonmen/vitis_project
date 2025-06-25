@@ -1,0 +1,778 @@
+---
+MainSourceFile:  'D:/VitisHLS_projects/convex_hull_vision/convex_hull.prj/sol1/.autopilot/db/accel.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          59351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          287095
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          287563
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          288032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          571882
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1222733
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1222931
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_336_1:  '
+    FileOffset:      336
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1223165
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_336_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_1:  '
+    FileOffset:      351
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1223395
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_1:  '
+    FileOffset:      366
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1223629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1223859
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_1:  '
+    FileOffset:      396
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1224093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1224323
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_426_1:  '
+    FileOffset:      426
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1224557
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_426_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_1:  '
+    FileOffset:      511
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1226147
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_719_1:  '
+    FileOffset:      719
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1231767
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_719_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_2:  '
+    FileOffset:      720
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1231808
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_3:  '
+    FileOffset:      721
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1231857
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_723_4:  '
+    FileOffset:      723
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1231940
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_723_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_761_1:  '
+    FileOffset:      761
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1233162
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_761_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_2:  '
+    FileOffset:      762
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1233203
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_764_3:  '
+    FileOffset:      764
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1233292
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_764_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_765_4:  '
+    FileOffset:      765
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1233366
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_765_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_819_1:  '
+    FileOffset:      819
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1235128
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_819_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_820_2:  '
+    FileOffset:      820
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1235169
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_820_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_3:  '
+    FileOffset:      828
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1235596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      949
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1021_1:  '
+    FileOffset:      1021
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1243210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1021_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1429_1:  '
+    FileOffset:      1429
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1258778
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1429_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1457_1:  '
+    FileOffset:      1457
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1259856
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1487_1:  '
+    FileOffset:      1487
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1261067
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1487_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1517_1:  '
+    FileOffset:      1517
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_structs.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1262254
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1517_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_1:  '
+    FileOffset:      122
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1278792
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_2:  '
+    FileOffset:      126
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1278843
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_2:  '
+    FileOffset:      170
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_1:  '
+    FileOffset:      210
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279539
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_214_2:  '
+    FileOffset:      214
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279594
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_214_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_1:  '
+    FileOffset:      254
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279913
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_2:  '
+    FileOffset:      258
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1279968
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_1:  '
+    FileOffset:      330
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1280656
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_435_1:  '
+    FileOffset:      435
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1281455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_435_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      711
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      716
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      721
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      726
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      731
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      736
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      741
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      746
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_824_1:  '
+    FileOffset:      824
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1286274
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_824_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_867_1:  '
+    FileOffset:      867
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1286751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_867_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_968_1:  '
+    FileOffset:      968
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_video_mem.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1288029
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_968_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1290310
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_1:  '
+    FileOffset:      58
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1290886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_1:  '
+    FileOffset:      86
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1291653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1292679
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_1:  '
+    FileOffset:      153
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1293686
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_1:  '
+    FileOffset:      181
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1294449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_1:  '
+    FileOffset:      205
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1295103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_1:  '
+    FileOffset:      228
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1295816
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_263_1:  '
+    FileOffset:      263
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1296686
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_263_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_2:  '
+    FileOffset:      265
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1296746
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1298806
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_397_1:  '
+    FileOffset:      397
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1301963
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_397_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_468_1:  '
+    FileOffset:      468
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1303801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_468_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_473_2:  '
+    FileOffset:      473
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1303917
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_473_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_499_1:  '
+    FileOffset:      499
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1304574
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_499_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_623_1:  '
+    FileOffset:      623
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1308727
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_623_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_737_1:  '
+    FileOffset:      737
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1313415
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_737_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_788_1:  '
+    FileOffset:      788
+    FilePath:        'D:\Xilinx\Vitis_Libraries\vision\L1\include\common\xf_utility.hpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1314595
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_788_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_1:  '
+    FileOffset:      34
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1318935
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_34_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_2:  '
+    FileOffset:      36
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319010
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_3:  '
+    FileOffset:      47
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_4:  '
+    FileOffset:      49
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_63_5:  '
+    FileOffset:      63
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_63_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_65_6:  '
+    FileOffset:      65
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_65_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_7:  '
+    FileOffset:      73
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1319942
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_75_8:  '
+    FileOffset:      75
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1320017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_75_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_85_9:  '
+    FileOffset:      85
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1320223
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_85_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_90_10:  '
+    FileOffset:      90
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1320380
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_90_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_11:  '
+    FileOffset:      104
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1320674
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_12:  '
+    FileOffset:      107
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1320775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_118_13:  '
+    FileOffset:      118
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321008
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_118_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_14:  '
+    FileOffset:      121
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321114
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_15:  '
+    FileOffset:      134
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321370
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_16:  '
+    FileOffset:      136
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321445
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_17:  '
+    FileOffset:      143
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_154_18:  '
+    FileOffset:      154
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321858
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_154_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_19:  '
+    FileOffset:      156
+    FilePath:        'D:\VitisHLS_projects\convex_hull_vision\accel.cpp'
+    Replacements:    
+      - FilePath:        'D:\VitisHLS_projects\convex_hull_vision\convex_hull.prj\sol1\.autopilot\db\accel.pp.0.cpp'
+        Offset:          1321933
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_19: '
+...

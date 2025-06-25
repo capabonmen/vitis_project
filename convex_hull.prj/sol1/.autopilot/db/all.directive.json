@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "convex_hull_accel",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "convex_hull_accel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/VitisHLS_projects/convex_hull_vision/run_hls.tcl",
+    "sourceLine": 74,
+    "success": true
+  }
+]

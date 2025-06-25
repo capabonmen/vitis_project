@@ -1,0 +1,55 @@
+<pragmas>
+<pragma file="./accel.cpp" line="74" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="77" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="76" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="64" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="67" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="66" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="155" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="158" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="157" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="144" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="145" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="64" avg="32"/>
+<pragma file="./accel.cpp" line="135" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="138" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="137" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="119" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="120" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="64" avg="32"/>
+<pragma file="./accel.cpp" line="105" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="106" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="64" avg="32"/>
+<pragma file="./accel.cpp" line="86" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="87" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="64" avg="32"/>
+<pragma file="./accel.cpp" line="91" pragmaType="unroll" parentfunction="convex_hull_accel" factor="2" skip_exit_check="0"/>
+<pragma file="./accel.cpp" line="48" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="51" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="50" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="35" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="38" pragmaType="pipeline" parentfunction="convex_hull_accel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="./accel.cpp" line="37" pragmaType="loop_tripcount" parentfunction="convex_hull_accel" min="1" max="128" avg="64"/>
+<pragma file="./accel.cpp" line="21" pragmaType="interface" parentfunction="convex_hull_accel" mode="m_axi" port="in_data" bundle="gmem0" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="./accel.cpp" line="22" pragmaType="interface" parentfunction="convex_hull_accel" mode="m_axi" port="out_data" bundle="gmem1" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="./accel.cpp" line="23" pragmaType="interface" parentfunction="convex_hull_accel" mode="s_axilite" port="rows" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="./accel.cpp" line="24" pragmaType="interface" parentfunction="convex_hull_accel" mode="s_axilite" port="cols" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="./accel.cpp" line="25" pragmaType="interface" parentfunction="convex_hull_accel" mode="s_axilite" port="hull_size" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="./accel.cpp" line="26" pragmaType="interface" parentfunction="convex_hull_accel" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="./accel.cpp" line="45" pragmaType="array_partition" parentfunction="convex_hull_accel" dim="1" factor="4" mode="cyclic" dynamic="0" variable="pts"/>
+<pragma file="./accel.cpp" line="100" pragmaType="array_partition" parentfunction="convex_hull_accel" dim="1" factor="4" mode="cyclic" dynamic="0" variable="hull"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp" line="672" pragmaType="inline" parentfunction="xf::cv::Mat<0, 128, 128, 1, 0>::Mat(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp" line="607" pragmaType="inline" parentfunction="init" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, false>::operator!=<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_uint<8>, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

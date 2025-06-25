@@ -1,0 +1,619 @@
+
+
+================================================================
+== Synthesis Summary Report of 'convex_hull_accel'
+================================================================
++ General Information: 
+    * Date:           Mon Jun 23 18:41:38 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        convex_hull.prj
+    * Solution:       sol1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-------------+-------------+-----+
+    |                              Modules                              |  Issue |       | Latency |  Latency  | Iteration|         |  Trip |          |        |        |             |             |     |
+    |                              & Loops                              |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM  |   DSP  |      FF     |     LUT     | URAM|
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-------------+-------------+-----+
+    |+ convex_hull_accel                                                |  Timing|  -0.11|        -|          -|         -|        -|      -|        no|  4 (1%)|  7 (3%)|  20643 (19%)|  39137 (73%)|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2      |       -|   0.00|    16387|  1.639e+05|         -|    16387|      -|        no|       -|       -|     29 (~0%)|    104 (~0%)|    -|
+    |  o VITIS_LOOP_34_1_VITIS_LOOP_36_2                                |       -|   7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4      |       -|   0.63|    16388|  1.639e+05|         -|    16388|      -|        no|       -|       -|     73 (~0%)|    276 (~0%)|    -|
+    |  o VITIS_LOOP_47_3_VITIS_LOOP_49_4                                |       -|   7.30|    16386|  1.639e+05|         3|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_104_11                    |  Timing|  -0.11|    28929|  2.893e+05|         -|    28929|      -|        no|       -|       -|    8019 (7%)|  16248 (30%)|    -|
+    |  o VITIS_LOOP_104_11                                              |       -|   7.30|    28928|  2.893e+05|       452|        -|     64|        no|       -|       -|            -|            -|    -|
+    |   + cross_r                                                       |       -|   0.39|        3|     30.000|         -|        1|      -|       yes|       -|  6 (2%)|    747 (~0%)|    309 (~0%)|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_118_13                    |  Timing|  -0.11|    28929|  2.893e+05|         -|    28929|      -|        no|       -|       -|    8021 (7%)|  16299 (30%)|    -|
+    |  o VITIS_LOOP_118_13                                              |       -|   7.30|    28928|  2.893e+05|       452|        -|     64|        no|       -|       -|            -|            -|    -|
+    |   + cross_r                                                       |       -|   0.39|        3|     30.000|         -|        1|      -|       yes|       -|  6 (2%)|    747 (~0%)|    309 (~0%)|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16  |       -|   2.05|    16386|  1.639e+05|         -|    16386|      -|        no|       -|       -|     19 (~0%)|     95 (~0%)|    -|
+    |  o VITIS_LOOP_134_15_VITIS_LOOP_136_16                            |       -|   7.30|    16384|  1.638e+05|         2|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_143_17                    |       -|   0.60|       68|    680.000|         -|       68|      -|        no|       -|       -|    107 (~0%)|    284 (~0%)|    -|
+    |  o VITIS_LOOP_143_17                                              |       -|   7.30|       66|    660.000|         4|        1|     64|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19  |       -|   0.00|    16387|  1.639e+05|         -|    16387|      -|        no|       -|       -|     29 (~0%)|    106 (~0%)|    -|
+    |  o VITIS_LOOP_154_18_VITIS_LOOP_156_19                            |       -|   7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6      |       -|   2.05|    16386|  1.639e+05|         -|    16386|      -|        no|       -|       -|     19 (~0%)|     95 (~0%)|    -|
+    |  o VITIS_LOOP_63_5_VITIS_LOOP_65_6                                |       -|   7.30|    16384|  1.638e+05|         2|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | + convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8      |       -|   0.00|    16387|  1.639e+05|         -|    16387|      -|        no|       -|       -|     29 (~0%)|    106 (~0%)|    -|
+    |  o VITIS_LOOP_73_7_VITIS_LOOP_75_8                                |       -|   7.30|    16385|  1.638e+05|         3|        1|  16384|       yes|       -|       -|            -|            -|    -|
+    | o VITIS_LOOP_85_9                                                 |       -|   7.30|        -|          -|         -|        -|      -|        no|       -|       -|            -|            -|    -|
+    |  o VITIS_LOOP_90_10                                               |       -|   7.30|        -|          -|         6|        -|      -|        no|       -|       -|            -|            -|    -|
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1 | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 6             | 16     | 0        |
+| s_axi_control_r | 32         | 6             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register       | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL           | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER           | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER         | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR         | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control   | rows           | 0x10   | 32    | W      | Data signal of rows              |                                                                      |
+| s_axi_control   | cols           | 0x18   | 32    | W      | Data signal of cols              |                                                                      |
+| s_axi_control   | hull_size      | 0x20   | 32    | R      | Data signal of hull_size         |                                                                      |
+| s_axi_control   | hull_size_ctrl | 0x24   | 32    | R      | Control signal of hull_size      | 0=hull_size_ap_vld                                                   |
+| s_axi_control_r | in_data_1      | 0x10   | 32    | W      | Data signal of in_data           |                                                                      |
+| s_axi_control_r | in_data_2      | 0x14   | 32    | W      | Data signal of in_data           |                                                                      |
+| s_axi_control_r | out_data_1     | 0x1c   | 32    | W      | Data signal of out_data          |                                                                      |
+| s_axi_control_r | out_data_2     | 0x20   | 32    | W      | Data signal of out_data          |                                                                      |
++-----------------+----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+----------------+
+| Argument  | Direction | Datatype       |
++-----------+-----------+----------------+
+| in_data   | in        | unsigned char* |
+| out_data  | out       | unsigned char* |
+| rows      | in        | int            |
+| cols      | in        | int            |
+| hull_size | out       | int*           |
++-----------+-----------+----------------+
+
+* SW-to-HW Mapping
++-----------+-----------------+-----------+----------+------------------------------------------+
+| Argument  | HW Interface    | HW Type   | HW Usage | HW Info                                  |
++-----------+-----------------+-----------+----------+------------------------------------------+
+| in_data   | m_axi_gmem0     | interface |          |                                          |
+| in_data   | s_axi_control_r | register  | offset   | name=in_data_1 offset=0x10 range=32      |
+| in_data   | s_axi_control_r | register  | offset   | name=in_data_2 offset=0x14 range=32      |
+| out_data  | m_axi_gmem1     | interface |          |                                          |
+| out_data  | s_axi_control_r | register  | offset   | name=out_data_1 offset=0x1c range=32     |
+| out_data  | s_axi_control_r | register  | offset   | name=out_data_2 offset=0x20 range=32     |
+| rows      | s_axi_control   | register  |          | name=rows offset=0x10 range=32           |
+| cols      | s_axi_control   | register  |          | name=cols offset=0x18 range=32           |
+| hull_size | s_axi_control   | register  |          | name=hull_size offset=0x20 range=32      |
+| hull_size | s_axi_control   | register  |          | name=hull_size_ctrl offset=0x24 range=32 |
++-----------+-----------------+-----------+----------+------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+-------------------+------------------+
+| HW Interface | Direction | Length   | Width | Loop              | Loop Location    |
++--------------+-----------+----------+-------+-------------------+------------------+
+| m_axi_gmem0  | read      | variable | 8     | VITIS_LOOP_34_1   | accel.cpp:34:22  |
+| m_axi_gmem1  | write     | variable | 8     | VITIS_LOOP_73_7   | accel.cpp:73:26  |
+| m_axi_gmem1  | write     | variable | 8     | VITIS_LOOP_154_18 | accel.cpp:154:24 |
++--------------+-----------+----------+-------+-------------------+------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+------------------+-----------+--------------+----------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location  | Direction | Burst Status | Length   | Loop              | Loop Location    | Resolution | Problem                                                                                              |
++--------------+----------+------------------+-----------+--------------+----------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | in_data  | accel.cpp:39:29  | read      | Widen Fail   |          | VITIS_LOOP_36_2   | accel.cpp:36:19  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | in_data  | accel.cpp:39:29  | read      | Inferred     | variable | VITIS_LOOP_34_1   | accel.cpp:34:22  |            |                                                                                                      |
+| m_axi_gmem1  | out_data | accel.cpp:78:25  | write     | Widen Fail   |          | VITIS_LOOP_75_8   | accel.cpp:75:19  | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | out_data | accel.cpp:78:25  | write     | Inferred     | variable | VITIS_LOOP_73_7   | accel.cpp:73:26  |            |                                                                                                      |
+| m_axi_gmem1  | out_data | accel.cpp:159:25 | write     | Widen Fail   |          | VITIS_LOOP_156_19 | accel.cpp:156:21 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | out_data | accel.cpp:159:25 | write     | Inferred     | variable | VITIS_LOOP_154_18 | accel.cpp:154:24 |            |                                                                                                      |
++--------------+----------+------------------+-----------+--------------+----------+-------------------+------------------+------------+------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------------+-----+--------+---------------------------+----------+--------+---------+
+| Name                                                              | DSP | Pragma | Variable                  | Op       | Impl   | Latency |
++-------------------------------------------------------------------+-----+--------+---------------------------+----------+--------+---------+
+| + convex_hull_accel                                               | 7   |        |                           |          |        |         |
+|   mul_15s_15s_15_1_1_U96                                          | 1   |        | mul_ln34                  | mul      | auto   | 0       |
+|   mul_8ns_8ns_16_1_1_U97                                          |     |        | bound                     | mul      | auto   | 0       |
+|   add_ln85_fu_838_p2                                              |     |        | add_ln85                  | add      | fabric | 0       |
+|   add_ln85_2_fu_876_p2                                            |     |        | add_ln85_2                | add      | fabric | 0       |
+|   add_ln89_fu_1015_p2                                             |     |        | add_ln89                  | add      | fabric | 0       |
+|   grp_cross_r_fu_1481                                             |     |        | pts_y_1_load_1            | ram_1wnr | auto   | 1       |
+|   grp_cross_r_fu_1481                                             |     |        | pts_y_load_6              | ram_1wnr | auto   | 1       |
+|   grp_cross_r_fu_1481                                             |     |        | pts_x_3_addr_3_write_ln92 | ram_1wnr | auto   | 1       |
+|   add_ln93_fu_1054_p2                                             |     |        | add_ln93                  | add      | fabric | 0       |
+|   add_ln95_fu_1064_p2                                             |     |        | add_ln95                  | add      | fabric | 0       |
+|   grp_cross_r_fu_1481                                             |     |        | pts_x_2_addr_2_write_ln95 | ram_1wnr | auto   | 1       |
+|   add_ln85_1_fu_1092_p2                                           |     |        | add_ln85_1                | add      | fabric | 0       |
+|   t_fu_1111_p2                                                    |     |        | t                         | add      | fabric | 0       |
+|   add_ln118_fu_1118_p2                                            |     |        | add_ln118                 | add      | fabric | 0       |
+|   hs_fu_1127_p2                                                   |     |        | hs                        | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_34_1_VITIS_LOOP_36_2     | 0   |        |                           |          |        |         |
+|    add_ln34_fu_100_p2                                             |     |        | add_ln34                  | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_47_3_VITIS_LOOP_49_4     | 0   |        |                           |          |        |         |
+|    add_ln47_fu_262_p2                                             |     |        | add_ln47                  | add      | fabric | 0       |
+|    add_ln47_1_fu_302_p2                                           |     |        | add_ln47_1                | add      | fabric | 0       |
+|    count_3_fu_379_p2                                              |     |        | count_3                   | add      | fabric | 0       |
+|    c_1_fu_390_p2                                                  |     |        | c_1                       | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_104_11                   | 0   |        |                           |          |        |         |
+|    add_ln104_2_fu_9487_p2                                         |     |        | add_ln104_2               | add      | fabric | 0       |
+|    add_ln104_fu_9505_p2                                           |     |        | add_ln104                 | add      | fabric | 0       |
+|    add_ln104_1_fu_9511_p2                                         |     |        | add_ln104_1               | add      | fabric | 0       |
+|    k_127_fu_9517_p2                                               |     |        | k_127                     | add      | fabric | 0       |
+|    k_126_fu_9523_p2                                               |     |        | k_126                     | add      | fabric | 0       |
+|    k_125_fu_9529_p2                                               |     |        | k_125                     | add      | fabric | 0       |
+|    k_124_fu_9535_p2                                               |     |        | k_124                     | add      | fabric | 0       |
+|    k_123_fu_9541_p2                                               |     |        | k_123                     | add      | fabric | 0       |
+|    k_122_fu_9547_p2                                               |     |        | k_122                     | add      | fabric | 0       |
+|    k_121_fu_9553_p2                                               |     |        | k_121                     | add      | fabric | 0       |
+|    k_120_fu_9559_p2                                               |     |        | k_120                     | add      | fabric | 0       |
+|    k_119_fu_9565_p2                                               |     |        | k_119                     | add      | fabric | 0       |
+|    k_118_fu_9571_p2                                               |     |        | k_118                     | add      | fabric | 0       |
+|    k_117_fu_9577_p2                                               |     |        | k_117                     | add      | fabric | 0       |
+|    k_116_fu_9583_p2                                               |     |        | k_116                     | add      | fabric | 0       |
+|    k_115_fu_9589_p2                                               |     |        | k_115                     | add      | fabric | 0       |
+|    k_114_fu_9595_p2                                               |     |        | k_114                     | add      | fabric | 0       |
+|    k_113_fu_9601_p2                                               |     |        | k_113                     | add      | fabric | 0       |
+|    k_112_fu_9607_p2                                               |     |        | k_112                     | add      | fabric | 0       |
+|    k_111_fu_9613_p2                                               |     |        | k_111                     | add      | fabric | 0       |
+|    k_110_fu_9619_p2                                               |     |        | k_110                     | add      | fabric | 0       |
+|    k_109_fu_9625_p2                                               |     |        | k_109                     | add      | fabric | 0       |
+|    k_108_fu_9631_p2                                               |     |        | k_108                     | add      | fabric | 0       |
+|    k_107_fu_9637_p2                                               |     |        | k_107                     | add      | fabric | 0       |
+|    k_106_fu_9643_p2                                               |     |        | k_106                     | add      | fabric | 0       |
+|    k_105_fu_9649_p2                                               |     |        | k_105                     | add      | fabric | 0       |
+|    k_104_fu_9655_p2                                               |     |        | k_104                     | add      | fabric | 0       |
+|    k_103_fu_9661_p2                                               |     |        | k_103                     | add      | fabric | 0       |
+|    k_102_fu_9667_p2                                               |     |        | k_102                     | add      | fabric | 0       |
+|    k_101_fu_9673_p2                                               |     |        | k_101                     | add      | fabric | 0       |
+|    k_100_fu_9679_p2                                               |     |        | k_100                     | add      | fabric | 0       |
+|    k_99_fu_9685_p2                                                |     |        | k_99                      | add      | fabric | 0       |
+|    k_98_fu_9691_p2                                                |     |        | k_98                      | add      | fabric | 0       |
+|    k_97_fu_9697_p2                                                |     |        | k_97                      | add      | fabric | 0       |
+|    k_96_fu_9703_p2                                                |     |        | k_96                      | add      | fabric | 0       |
+|    k_95_fu_9709_p2                                                |     |        | k_95                      | add      | fabric | 0       |
+|    k_94_fu_9715_p2                                                |     |        | k_94                      | add      | fabric | 0       |
+|    k_93_fu_9721_p2                                                |     |        | k_93                      | add      | fabric | 0       |
+|    k_92_fu_9727_p2                                                |     |        | k_92                      | add      | fabric | 0       |
+|    k_91_fu_9733_p2                                                |     |        | k_91                      | add      | fabric | 0       |
+|    k_90_fu_9739_p2                                                |     |        | k_90                      | add      | fabric | 0       |
+|    k_89_fu_9745_p2                                                |     |        | k_89                      | add      | fabric | 0       |
+|    k_88_fu_9751_p2                                                |     |        | k_88                      | add      | fabric | 0       |
+|    k_87_fu_9757_p2                                                |     |        | k_87                      | add      | fabric | 0       |
+|    k_86_fu_9763_p2                                                |     |        | k_86                      | add      | fabric | 0       |
+|    k_85_fu_9769_p2                                                |     |        | k_85                      | add      | fabric | 0       |
+|    k_84_fu_9775_p2                                                |     |        | k_84                      | add      | fabric | 0       |
+|    k_83_fu_9781_p2                                                |     |        | k_83                      | add      | fabric | 0       |
+|    k_82_fu_9787_p2                                                |     |        | k_82                      | add      | fabric | 0       |
+|    k_81_fu_9793_p2                                                |     |        | k_81                      | add      | fabric | 0       |
+|    k_80_fu_9799_p2                                                |     |        | k_80                      | add      | fabric | 0       |
+|    k_79_fu_9805_p2                                                |     |        | k_79                      | add      | fabric | 0       |
+|    k_78_fu_9811_p2                                                |     |        | k_78                      | add      | fabric | 0       |
+|    k_77_fu_9817_p2                                                |     |        | k_77                      | add      | fabric | 0       |
+|    k_76_fu_9823_p2                                                |     |        | k_76                      | add      | fabric | 0       |
+|    k_75_fu_9829_p2                                                |     |        | k_75                      | add      | fabric | 0       |
+|    k_74_fu_9835_p2                                                |     |        | k_74                      | add      | fabric | 0       |
+|    k_73_fu_9841_p2                                                |     |        | k_73                      | add      | fabric | 0       |
+|    k_72_fu_9847_p2                                                |     |        | k_72                      | add      | fabric | 0       |
+|    k_71_fu_9853_p2                                                |     |        | k_71                      | add      | fabric | 0       |
+|    k_70_fu_9859_p2                                                |     |        | k_70                      | add      | fabric | 0       |
+|    k_69_fu_9865_p2                                                |     |        | k_69                      | add      | fabric | 0       |
+|    k_68_fu_9871_p2                                                |     |        | k_68                      | add      | fabric | 0       |
+|    k_67_fu_9877_p2                                                |     |        | k_67                      | add      | fabric | 0       |
+|    k_66_fu_9883_p2                                                |     |        | k_66                      | add      | fabric | 0       |
+|    k_65_fu_9889_p2                                                |     |        | k_65                      | add      | fabric | 0       |
+|    k_128_fu_12643_p2                                              |     |        | k_128                     | add      | fabric | 0       |
+|   + cross_r (grp_cross_r_fu_7320)                                 | 6   |        |                           |          |        |         |
+|     sub_ln8_fu_58_p2                                              |     |        | sub_ln8                   | sub      | fabric | 0       |
+|     sub_ln8_1_fu_64_p2                                            |     |        | sub_ln8_1                 | sub      | fabric | 0       |
+|     mul_32s_32s_32_2_0_U17                                        | 3   |        | mul_ln8                   | mul      | auto   | 1       |
+|     sub_ln8_2_fu_70_p2                                            |     |        | sub_ln8_2                 | sub      | fabric | 0       |
+|     sub_ln8_3_fu_76_p2                                            |     |        | sub_ln8_3                 | sub      | fabric | 0       |
+|     mul_32s_32s_32_2_0_U18                                        | 3   |        | mul_ln8_1                 | mul      | auto   | 1       |
+|     sub_ln8_4_fu_82_p2                                            |     |        | sub_ln8_4                 | sub      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_118_13                   | 0   |        |                           |          |        |         |
+|    add_ln118_fu_9456_p2                                           |     |        | add_ln118                 | add      | fabric | 0       |
+|    add_ln118_1_fu_9462_p2                                         |     |        | add_ln118_1               | add      | fabric | 0       |
+|    k_63_fu_9468_p2                                                |     |        | k_63                      | add      | fabric | 0       |
+|    k_62_fu_9474_p2                                                |     |        | k_62                      | add      | fabric | 0       |
+|    k_61_fu_9480_p2                                                |     |        | k_61                      | add      | fabric | 0       |
+|    k_60_fu_9486_p2                                                |     |        | k_60                      | add      | fabric | 0       |
+|    k_59_fu_9492_p2                                                |     |        | k_59                      | add      | fabric | 0       |
+|    k_58_fu_9498_p2                                                |     |        | k_58                      | add      | fabric | 0       |
+|    k_57_fu_9504_p2                                                |     |        | k_57                      | add      | fabric | 0       |
+|    k_56_fu_9510_p2                                                |     |        | k_56                      | add      | fabric | 0       |
+|    k_55_fu_9516_p2                                                |     |        | k_55                      | add      | fabric | 0       |
+|    k_54_fu_9522_p2                                                |     |        | k_54                      | add      | fabric | 0       |
+|    k_53_fu_9528_p2                                                |     |        | k_53                      | add      | fabric | 0       |
+|    k_52_fu_9534_p2                                                |     |        | k_52                      | add      | fabric | 0       |
+|    k_51_fu_9540_p2                                                |     |        | k_51                      | add      | fabric | 0       |
+|    k_50_fu_9546_p2                                                |     |        | k_50                      | add      | fabric | 0       |
+|    k_49_fu_9552_p2                                                |     |        | k_49                      | add      | fabric | 0       |
+|    k_48_fu_9558_p2                                                |     |        | k_48                      | add      | fabric | 0       |
+|    k_47_fu_9564_p2                                                |     |        | k_47                      | add      | fabric | 0       |
+|    k_46_fu_9570_p2                                                |     |        | k_46                      | add      | fabric | 0       |
+|    k_45_fu_9576_p2                                                |     |        | k_45                      | add      | fabric | 0       |
+|    k_44_fu_9582_p2                                                |     |        | k_44                      | add      | fabric | 0       |
+|    k_43_fu_9588_p2                                                |     |        | k_43                      | add      | fabric | 0       |
+|    k_42_fu_9594_p2                                                |     |        | k_42                      | add      | fabric | 0       |
+|    k_41_fu_9600_p2                                                |     |        | k_41                      | add      | fabric | 0       |
+|    k_40_fu_9606_p2                                                |     |        | k_40                      | add      | fabric | 0       |
+|    k_39_fu_9612_p2                                                |     |        | k_39                      | add      | fabric | 0       |
+|    k_38_fu_9618_p2                                                |     |        | k_38                      | add      | fabric | 0       |
+|    k_37_fu_9624_p2                                                |     |        | k_37                      | add      | fabric | 0       |
+|    k_36_fu_9630_p2                                                |     |        | k_36                      | add      | fabric | 0       |
+|    k_35_fu_9636_p2                                                |     |        | k_35                      | add      | fabric | 0       |
+|    k_34_fu_9642_p2                                                |     |        | k_34                      | add      | fabric | 0       |
+|    k_33_fu_9648_p2                                                |     |        | k_33                      | add      | fabric | 0       |
+|    k_32_fu_9654_p2                                                |     |        | k_32                      | add      | fabric | 0       |
+|    k_31_fu_9660_p2                                                |     |        | k_31                      | add      | fabric | 0       |
+|    k_30_fu_9666_p2                                                |     |        | k_30                      | add      | fabric | 0       |
+|    k_29_fu_9672_p2                                                |     |        | k_29                      | add      | fabric | 0       |
+|    k_28_fu_9678_p2                                                |     |        | k_28                      | add      | fabric | 0       |
+|    k_27_fu_9684_p2                                                |     |        | k_27                      | add      | fabric | 0       |
+|    k_26_fu_9690_p2                                                |     |        | k_26                      | add      | fabric | 0       |
+|    k_25_fu_9696_p2                                                |     |        | k_25                      | add      | fabric | 0       |
+|    k_24_fu_9702_p2                                                |     |        | k_24                      | add      | fabric | 0       |
+|    k_23_fu_9708_p2                                                |     |        | k_23                      | add      | fabric | 0       |
+|    k_22_fu_9714_p2                                                |     |        | k_22                      | add      | fabric | 0       |
+|    k_21_fu_9720_p2                                                |     |        | k_21                      | add      | fabric | 0       |
+|    k_20_fu_9726_p2                                                |     |        | k_20                      | add      | fabric | 0       |
+|    k_19_fu_9732_p2                                                |     |        | k_19                      | add      | fabric | 0       |
+|    k_18_fu_9738_p2                                                |     |        | k_18                      | add      | fabric | 0       |
+|    k_17_fu_9744_p2                                                |     |        | k_17                      | add      | fabric | 0       |
+|    k_16_fu_9750_p2                                                |     |        | k_16                      | add      | fabric | 0       |
+|    k_15_fu_9756_p2                                                |     |        | k_15                      | add      | fabric | 0       |
+|    k_14_fu_9762_p2                                                |     |        | k_14                      | add      | fabric | 0       |
+|    k_13_fu_9768_p2                                                |     |        | k_13                      | add      | fabric | 0       |
+|    k_12_fu_9774_p2                                                |     |        | k_12                      | add      | fabric | 0       |
+|    k_11_fu_9780_p2                                                |     |        | k_11                      | add      | fabric | 0       |
+|    k_10_fu_9786_p2                                                |     |        | k_10                      | add      | fabric | 0       |
+|    k_9_fu_9792_p2                                                 |     |        | k_9                       | add      | fabric | 0       |
+|    k_8_fu_9798_p2                                                 |     |        | k_8                       | add      | fabric | 0       |
+|    k_7_fu_9804_p2                                                 |     |        | k_7                       | add      | fabric | 0       |
+|    k_6_fu_9810_p2                                                 |     |        | k_6                       | add      | fabric | 0       |
+|    k_5_fu_9816_p2                                                 |     |        | k_5                       | add      | fabric | 0       |
+|    k_4_fu_9822_p2                                                 |     |        | k_4                       | add      | fabric | 0       |
+|    k_3_fu_9828_p2                                                 |     |        | k_3                       | add      | fabric | 0       |
+|    k_2_fu_9834_p2                                                 |     |        | k_2                       | add      | fabric | 0       |
+|    k_1_fu_9840_p2                                                 |     |        | k_1                       | add      | fabric | 0       |
+|    k_64_fu_11890_p2                                               |     |        | k_64                      | add      | fabric | 0       |
+|    add_ln118_65_fu_11961_p2                                       |     |        | add_ln118_65              | add      | fabric | 0       |
+|   + cross_r (grp_cross_r_fu_7270)                                 | 6   |        |                           |          |        |         |
+|     sub_ln8_fu_58_p2                                              |     |        | sub_ln8                   | sub      | fabric | 0       |
+|     sub_ln8_1_fu_64_p2                                            |     |        | sub_ln8_1                 | sub      | fabric | 0       |
+|     mul_32s_32s_32_2_0_U17                                        | 3   |        | mul_ln8                   | mul      | auto   | 1       |
+|     sub_ln8_2_fu_70_p2                                            |     |        | sub_ln8_2                 | sub      | fabric | 0       |
+|     sub_ln8_3_fu_76_p2                                            |     |        | sub_ln8_3                 | sub      | fabric | 0       |
+|     mul_32s_32s_32_2_0_U18                                        | 3   |        | mul_ln8_1                 | mul      | auto   | 1       |
+|     sub_ln8_4_fu_82_p2                                            |     |        | sub_ln8_4                 | sub      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_134_15_VITIS_LOOP_136_16 | 0   |        |                           |          |        |         |
+|    add_ln134_fu_72_p2                                             |     |        | add_ln134                 | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_143_17                   | 0   |        |                           |          |        |         |
+|    add_ln143_fu_238_p2                                            |     |        | add_ln143                 | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_154_18_VITIS_LOOP_156_19 | 0   |        |                           |          |        |         |
+|    add_ln154_fu_104_p2                                            |     |        | add_ln154                 | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_63_5_VITIS_LOOP_65_6     | 0   |        |                           |          |        |         |
+|    add_ln63_fu_72_p2                                              |     |        | add_ln63                  | add      | fabric | 0       |
+|  + convex_hull_accel_Pipeline_VITIS_LOOP_73_7_VITIS_LOOP_75_8     | 0   |        |                           |          |        |         |
+|    add_ln73_fu_104_p2                                             |     |        | add_ln73                  | add      | fabric | 0       |
++-------------------------------------------------------------------+-----+--------+---------------------------+----------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+| Name                  | Usage        | Type      | BRAM | URAM | Pragma | Variable     | Impl | Latency | Bitwidth, Depth, |
+|                       |              |           |      |      |        |              |      |         | Banks            |
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+| + convex_hull_accel   |              |           | 4    | 0    |        |              |      |         |                  |
+|   control_s_axi_U     | interface    | s_axilite |      |      |        |              |      |         |                  |
+|   control_r_s_axi_U   | interface    | s_axilite |      |      |        |              |      |         |                  |
+|   gmem0_m_axi_U       | interface    | m_axi     | 2    |      |        |              |      |         |                  |
+|   gmem1_m_axi_U       | interface    | m_axi     | 2    |      |        |              |      |         |                  |
+|   in_img_data_fifo_U  | fifo array   |           |      |      |        | in_img_data  | srl  | 0       | 8, 2, 1          |
+|   out_img_data_fifo_U | fifo array   |           |      |      |        | out_img_data | srl  | 0       | 8, 2, 1          |
+|   pts_x_U             | rom_np array |           |      |      |        | pts_x        | auto | 1       | 32, 16, 1        |
+|   pts_x_1_U           | rom_np array |           |      |      |        | pts_x_1      | auto | 1       | 32, 16, 1        |
+|   pts_x_2_U           | rom_np array |           |      |      |        | pts_x_2      | auto | 1       | 32, 16, 1        |
+|   pts_x_3_U           | rom_np array |           |      |      |        | pts_x_3      | auto | 1       | 32, 16, 1        |
+|   pts_y_U             | rom_np array |           |      |      |        | pts_y        | auto | 1       | 32, 16, 1        |
+|   pts_y_1_U           | rom_np array |           |      |      |        | pts_y_1      | auto | 1       | 32, 16, 1        |
+|   pts_y_2_U           | rom_np array |           |      |      |        | pts_y_2      | auto | 1       | 32, 16, 1        |
+|   pts_y_3_U           | rom_np array |           |      |      |        | pts_y_3      | auto | 1       | 32, 16, 1        |
+|   hull_x_U            | rom_np array |           |      |      |        | hull_x       | auto | 1       | 32, 16, 1        |
+|   hull_x_1_U          | rom_np array |           |      |      |        | hull_x_1     | auto | 1       | 32, 16, 1        |
+|   hull_x_2_U          | rom_np array |           |      |      |        | hull_x_2     | auto | 1       | 32, 16, 1        |
+|   hull_x_3_U          | rom_np array |           |      |      |        | hull_x_3     | auto | 1       | 32, 16, 1        |
+|   hull_y_U            | rom_np array |           |      |      |        | hull_y       | auto | 1       | 32, 16, 1        |
+|   hull_y_1_U          | rom_np array |           |      |      |        | hull_y_1     | auto | 1       | 32, 16, 1        |
+|   hull_y_2_U          | rom_np array |           |      |      |        | hull_y_2     | auto | 1       | 32, 16, 1        |
+|   hull_y_3_U          | rom_np array |           |      |      |        | hull_y_3     | auto | 1       | 32, 16, 1        |
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| Type          | Options                                  | Location                                                                                                                               | Messages                                           |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+| array_reshape | variable=val factor=RESHAPE_FACTOR dim=1 | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val | 'factor' in '#pragma HLS array_reshape' is ignored |
++---------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| Type            | Options                                                   | Location                                                                                                                               |
++-----------------+-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:245 in scalar<n, t>                                               |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:246 in scalar<n, t>, val                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:252 in scalar<n, t>                                               |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:253 in scalar<n, t>, val                                          |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:260 in scalar<n, t>, val                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:261 in scalar<n, t>                                               |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:269 in scalar<n, t>, val                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:270 in scalar<n, t>                                               |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:279 in scalar<n, t>, val                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:280 in scalar<n, t>                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:305 in operator=                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:309 in operator=                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:318 in operator+                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:323 in operator+                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:333 in operator+                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:338 in operator+                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:348 in operator-                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:353 in operator-                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:363 in operator-                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:368 in operator-                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:378 in operator*                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:383 in operator*                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:393 in operator*                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:398 in operator*                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:408 in operator/                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:413 in operator/                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:423 in operator/                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:428 in operator/                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:584 in type                                                       |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:592 in depth                                                      |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:599 in channels                                                   |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:607 in init                                                       |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:654 in mat<t, rows, cols, npc, xfcvdepth>                         |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:663 in mat<t, rows, cols, npc, xfcvdepth>                         |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:672 in mat<t, rows, cols, npc, xfcvdepth>                         |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:681 in mat<t, rows, cols, npc, xfcvdepth>                         |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:708 in copyto                                                     |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:742 in copyfrom                                                   |
+| bind_op         | variable=mul_rows_cols op=mul impl=dsp latency=2          | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:949 in addrbound, mul_rows_cols                                   |
+| loop_tripcount  | min=1 max=ADDRBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:984 in axi2axistream                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:985 in axi2axistream                                              |
+| loop_tripcount  | min=1 max=ADDRBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:998 in axi2axistream                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:999 in axi2axistream                                              |
+| loop_tripcount  | min=1 max=ROWS                                            | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1019 in axi2axistream                                             |
+| loop_tripcount  | min=1 max=COLS_ADDRBOUND                                  | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1023 in axi2axistream                                             |
+| pipeline        | II=1                                                      | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1024 in axi2axistream                                             |
+| loop_tripcount  | min=1 max=LOOPBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1056 in axistream2matstream                                       |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1057 in axistream2matstream                                       |
+| loop_tripcount  | min=1 max=LOOPBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1100 in matstream2mat                                             |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1101 in matstream2mat                                             |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1113 in axistream2mat                                             |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1126 in axistream2mat                                             |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1141 in axi2mat                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1164 in axi2mat                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1176 in axi2mat                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1199 in axi2mat                                                   |
+| loop_tripcount  | min=1 max=LOOPBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1273 in mat2matstream                                             |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1274 in mat2matstream                                             |
+| loop_tripcount  | min=1 max=ROWS                                            | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1303 in matstream2axistream                                       |
+| loop_tripcount  | min=1 max=COLS_BOUND_PER_NPC                              | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1308 in matstream2axistream                                       |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1309 in matstream2axistream                                       |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1351 in mat2axistream                                             |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1364 in mat2axistream                                             |
+| loop_tripcount  | min=1 max=ADDRBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1381 in axistream2axi                                             |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1382 in axistream2axi                                             |
+| loop_tripcount  | min=1 max=ADDRBOUND                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1396 in axistream2axi                                             |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1397 in axistream2axi                                             |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1411 in mat2axi                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1438 in mat2axi                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1469 in mat2axi                                                   |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:1499 in mat2axi                                                   |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:35 in ptr2xfmat                                                   |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:40 in ptr2xfmat                                                   |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:41 in ptr2xfmat                                                   |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:53 in xfmat2ptr                                                   |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:59 in xfmat2ptr                                                   |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:60 in xfmat2ptr                                                   |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:81 in xfduplicatemat_ptrmat                                       |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:87 in xfduplicatemat_ptrmat                                       |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:88 in xfduplicatemat_ptrmat                                       |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:114 in xfduplicatemat_ptrmat2                                     |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:120 in xfduplicatemat_ptrmat2                                     |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:121 in xfduplicatemat_ptrmat2                                     |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:148 in xfduplicatemat_ptr_mat_axi                                 |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:154 in xfduplicatemat_ptr_mat_axi                                 |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:155 in xfduplicatemat_ptr_mat_axi                                 |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:176 in xfmat2axi_strm                                             |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:182 in xfmat2axi_strm                                             |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:183 in xfmat2axi_strm                                             |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:200 in axi_strm2xfmat                                             |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:206 in axi_strm2xfmat                                             |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:207 in axi_strm2xfmat                                             |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:223 in xfduplicatemat_ptr_axi                                     |
+| pipeline        | II = 1                                                    | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:229 in xfduplicatemat_ptr_axi                                     |
+| loop_tripcount  | min = c_TRIP_COUNT max = c_TRIP_COUNT                     | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:230 in xfduplicatemat_ptr_axi                                     |
+| inline          | OFF                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:252 in xfsetborder                                                |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:264 in xfsetborder                                                |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:266 in xfsetborder                                                |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:321 in xfpackpixels                                               |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:327 in xfpackpixels                                               |
+| inline          | off                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:339 in xfextractpixels                                            |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:348 in xfextractpixels                                            |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:371 in xfextractdata                                              |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:391 in xfcopydata                                                 |
+| loop_tripcount  | min=6 max=6                                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:399 in xfcopydata                                                 |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:400 in xfcopydata                                                 |
+| loop_tripcount  | min=IN_BH max=IN_BH                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:470 in xfduplicatestream                                          |
+| loop_flatten    | off                                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:471 in xfduplicatestream                                          |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:475 in xfduplicatestream                                          |
+| loop_tripcount  | min=IN_BW max=IN_BW                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:476 in xfduplicatestream                                          |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:501 in array2hlsstrm                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:502 in array2hlsstrm                                              |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:543 in hlsstrm2xfmat                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:544 in hlsstrm2xfmat                                              |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:625 in axistrm2hlsstrm                                            |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:626 in axistrm2hlsstrm                                            |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:637 in axistrm2xfmat                                              |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:693 in xfmat2hlsstrm                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:694 in xfmat2hlsstrm                                              |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:739 in hlsstrm2array                                              |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:740 in hlsstrm2array                                              |
+| loop_tripcount  | min=1 max=TRIPCOUNT                                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:790 in hlsstrm2axistrm                                            |
+| pipeline        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:791 in hlsstrm2axistrm                                            |
+| dataflow        |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:803 in xfmat2axistrm                                              |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:46 in window<rows, cols, t>                                     |
+| array_partition | variable=val dim=1 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:47 in window<rows, cols, t>, val                                |
+| array_partition | variable=val dim=2 complete                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:48 in window<rows, cols, t>, val                                |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:112 in shift_pixels_left                                        |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:124 in shift_pixels_left                                        |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:128 in shift_pixels_left                                        |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:156 in shift_pixels_right                                       |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:168 in shift_pixels_right                                       |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:172 in shift_pixels_right                                       |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:200 in shift_pixels_up                                          |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:212 in shift_pixels_up                                          |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:216 in shift_pixels_up                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:244 in shift_pixels_down                                        |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:256 in shift_pixels_down                                        |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:260 in shift_pixels_down                                        |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:287 in insert_pixel                                             |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:320 in insert_row                                               |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:332 in insert_row                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:359 in insert_top_row                                           |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:392 in insert_bottom_row                                        |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:425 in insert_col                                               |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:437 in insert_col                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:464 in insert_left_col                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:497 in insert_right_col                                         |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:530 in getval                                                   |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:542 in operator()                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:579 in shift_left                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:592 in shift_right                                              |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:605 in shift_up                                                 |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:618 in shift_down                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:631 in insert                                                   |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:644 in insert_top                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:657 in insert_bottom                                            |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:670 in insert_left                                              |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:683 in insert_right                                             |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:700 in linebuffer<rows, cols, t, mem_type, reshape_factor>      |
+| dependence      | variable=val inter false                                  | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:701 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| dependence      | variable=val intra false                                  | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:702 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_1P impl=BRAM                        | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:711 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_1P impl=URAM                        | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:716 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_2P impl=BRAM                        | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:721 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_2P impl=URAM                        | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:726 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_S2P impl=BRAM                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:731 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_S2P impl=URAM                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:736 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_T2P impl=BRAM                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:741 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| bind_storage    | variable=val type=RAM_T2P impl=URAM                       | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:746 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| array_partition | variable=val complete dim=1                               | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:755 in linebuffer<rows, cols, t, mem_type, reshape_factor>, val |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:813 in shift_pixels_down                                        |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:826 in shift_pixels_down                                        |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:856 in shift_pixels_up                                          |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:869 in shift_pixels_up                                          |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:898 in insert_bottom_row                                        |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:931 in insert_top_row                                           |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:964 in get_col                                                  |
+| unroll          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:970 in get_col                                                  |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:981 in getval                                                   |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:992 in operator()                                               |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1004 in shift_down                                              |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1016 in shift_up                                                |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1028 in insert_bottom                                           |
+| inline          |                                                           | ../../Xilinx/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:1040 in insert_top                                              |
+| interface       | m_axi port=in_data offset=slave bundle=gmem0 depth=16384  | ./accel.cpp:21 in convex_hull_accel, in_data                                                                                           |
+| interface       | m_axi port=out_data offset=slave bundle=gmem1 depth=16384 | ./accel.cpp:22 in convex_hull_accel, out_data                                                                                          |
+| interface       | s_axilite port=rows bundle=control                        | ./accel.cpp:23 in convex_hull_accel, rows                                                                                              |
+| interface       | s_axilite port=cols bundle=control                        | ./accel.cpp:24 in convex_hull_accel, cols                                                                                              |
+| interface       | s_axilite port=hull_size bundle=control                   | ./accel.cpp:25 in convex_hull_accel, hull_size                                                                                         |
+| interface       | s_axilite port=return bundle=control                      | ./accel.cpp:26 in convex_hull_accel, return                                                                                            |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:35 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:37 in convex_hull_accel                                                                                                    |
+| pipeline        | II=1                                                      | ./accel.cpp:38 in convex_hull_accel                                                                                                    |
+| array_partition | variable=pts cyclic factor=4                              | ./accel.cpp:45 in convex_hull_accel, pts                                                                                               |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:48 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:50 in convex_hull_accel                                                                                                    |
+| pipeline        | II=1                                                      | ./accel.cpp:51 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:64 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:66 in convex_hull_accel                                                                                                    |
+| pipeline        | II=1                                                      | ./accel.cpp:67 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:74 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:76 in convex_hull_accel                                                                                                    |
+| pipeline        | II=1                                                      | ./accel.cpp:77 in convex_hull_accel                                                                                                    |
+| pipeline        | II=1                                                      | ./accel.cpp:86 in convex_hull_accel                                                                                                    |
+| loop_tripcount  | min=1 max=64                                              | ./accel.cpp:87 in convex_hull_accel                                                                                                    |
+| unroll          | factor=2                                                  | ./accel.cpp:91 in convex_hull_accel                                                                                                    |
+| array_partition | variable=hull cyclic factor=4                             | ./accel.cpp:100 in convex_hull_accel, hull                                                                                             |
+| pipeline        | II=1                                                      | ./accel.cpp:105 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=64                                              | ./accel.cpp:106 in convex_hull_accel                                                                                                   |
+| pipeline        | II=1                                                      | ./accel.cpp:119 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=64                                              | ./accel.cpp:120 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:135 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:137 in convex_hull_accel                                                                                                   |
+| pipeline        | II=1                                                      | ./accel.cpp:138 in convex_hull_accel                                                                                                   |
+| pipeline        | II=1                                                      | ./accel.cpp:144 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=64                                              | ./accel.cpp:145 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:155 in convex_hull_accel                                                                                                   |
+| loop_tripcount  | min=1 max=128                                             | ./accel.cpp:157 in convex_hull_accel                                                                                                   |
+| pipeline        | II=1                                                      | ./accel.cpp:158 in convex_hull_accel                                                                                                   |
++-----------------+-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+
