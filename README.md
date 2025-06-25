@@ -22,6 +22,6 @@ Project to develop a hardware IP that performs convex hull calculation on images
 ## How to Compile and Synthesize
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/capabonmen/vitis_project.git
+cd vits_project
 vitis_hls -f run_hls.tcl
